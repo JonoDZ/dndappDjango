@@ -1,0 +1,1140 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ma",
+				"max_length"
+			],
+			[
+				"Ca",
+				"CharField"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"margi",
+				"margin"
+			],
+			[
+				"paddin",
+				"padding"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"get",
+				"getItemsFromDb"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"li",
+				"line-height"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"border",
+				"border-style"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"te",
+				"text-center"
+			],
+			[
+				"paddi",
+				"padding-bottom"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"cont",
+				"container"
+			],
+			[
+				"char",
+				"character"
+			],
+			[
+				"con",
+				"connCursor"
+			],
+			[
+				"cha",
+				"character"
+			],
+			[
+				"re",
+				"returnList"
+			],
+			[
+				"ch",
+				"change"
+			],
+			[
+				"last",
+				"lastName"
+			],
+			[
+				"bui",
+				"buildingList"
+			],
+			[
+				"requ",
+				"requestedNpcs"
+			],
+			[
+				"gen",
+				"generatedBuilding"
+			],
+			[
+				"building",
+				"buildings"
+			],
+			[
+				"first",
+				"firstNames"
+			],
+			[
+				"build",
+				"buildings"
+			],
+			[
+				"d",
+				"div\tTag"
+			],
+			[
+				"p",
+				"p\tTag"
+			],
+			[
+				"g",
+				"g"
+			],
+			[
+				"fir",
+				"firstName"
+			],
+			[
+				"c",
+				"choice"
+			],
+			[
+				"tar",
+				"target"
+			],
+			[
+				"targe",
+				"targetsClasslist"
+			],
+			[
+				"curr",
+				"currencyTbody"
+			],
+			[
+				"cur",
+				"curMulti"
+			],
+			[
+				"curre",
+				"currencyMultiplier"
+			],
+			[
+				"node",
+				"nodeTr"
+			],
+			[
+				"in",
+				"innerText"
+			],
+			[
+				"nodeT",
+				"nodethVal"
+			],
+			[
+				"out",
+				"outputNo"
+			],
+			[
+				"man",
+				"manTime"
+			],
+			[
+				"COPPER",
+				"copperWire"
+			],
+			[
+				"copper",
+				"copperWire"
+			],
+			[
+				"ingre",
+				"ingredients"
+			],
+			[
+				"O",
+				"Object"
+			],
+			[
+				"stor",
+				"storeItem1"
+			],
+			[
+				"iron",
+				"ironGear"
+			],
+			[
+				"copp",
+				"copperPlate"
+			],
+			[
+				"C",
+				"CopperOre"
+			],
+			[
+				"ing",
+				"ingredients"
+			],
+			[
+				"total",
+				"totalGCinMod3"
+			],
+			[
+				"totalGC",
+				"totalGCinMod2"
+			],
+			[
+				"tota",
+				"totalGCinMod3"
+			],
+			[
+				"tot",
+				"totalGCinMod2"
+			],
+			[
+				"totalGCinM",
+				"totalGCinMod1"
+			],
+			[
+				"t",
+				"totalGCinPC"
+			],
+			[
+				"totalGCin",
+				"totalGCinL1"
+			],
+			[
+				"mo",
+				"mod2"
+			],
+			[
+				"to",
+				"totalGCinRC"
+			],
+			[
+				"mod",
+				"mod1"
+			],
+			[
+				"red",
+				"redChip"
+			],
+			[
+				"pi",
+				"purpleChip"
+			],
+			[
+				"gre",
+				"greenChip"
+			],
+			[
+				"pr",
+				"purpleChip"
+			],
+			[
+				"modu",
+				"module3Ingredients"
+			],
+			[
+				"purp",
+				"purpleChip"
+			],
+			[
+				"an",
+				"anchorCreate"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"line",
+				"lineItem"
+			],
+			[
+				"edit",
+				"editImg"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"img",
+				"img"
+			],
+			[
+				"a",
+				"aText"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"on",
+				"onkeyup"
+			],
+			[
+				"text",
+				"textContent"
+			],
+			[
+				"doc",
+				"document"
+			],
+			[
+				"input",
+				"inputText"
+			],
+			[
+				"create",
+				"createElement"
+			],
+			[
+				"crea",
+				"createElement"
+			],
+			[
+				"span",
+				"textSpan"
+			],
+			[
+				"id",
+				"idCount"
+			],
+			[
+				"board",
+				"border-radius"
+			],
+			[
+				"righ",
+				"padding-right"
+			],
+			[
+				"pad",
+				"padding-right"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"save",
+				"saveCookie"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"cl",
+				"className"
+			],
+			[
+				"todo",
+				"todoList"
+			],
+			[
+				"toD",
+				"todoList"
+			],
+			[
+				"de",
+				"deleteClick"
+			],
+			[
+				"magin",
+				"margin-top"
+			],
+			[
+				"delete",
+				"deleteButton"
+			],
+			[
+				"list",
+				"listItem"
+			],
+			[
+				"sty",
+				"list-style"
+			],
+			[
+				"border-top",
+				"border-top-left-radius"
+			],
+			[
+				"bor",
+				"border-top"
+			],
+			[
+				"bacl",
+				"background-color"
+			],
+			[
+				"mart",
+				"margin-right"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"size",
+				"font-size"
+			],
+			[
+				"h",
+				"h3\tTag"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"bottom",
+				"padding-bottom"
+			],
+			[
+				"b",
+				"bottom"
+			],
+			[
+				"wid",
+				"width"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "dndapp/dndapp/settings.py",
+			"settings":
+			{
+				"buffer_size": 3271,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "dndapp/worldgen/models.py",
+			"settings":
+			{
+				"buffer_size": 1611,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "dndapp/worldgen/admin.py",
+			"settings":
+			{
+				"buffer_size": 134,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "dndapp/worldgen/urls.py",
+			"settings":
+			{
+				"buffer_size": 162,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "dndapp/worldgen/views.py",
+			"settings":
+			{
+				"buffer_size": 386,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "dndapp/manage.py",
+			"settings":
+			{
+				"buffer_size": 804,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "dndapp/worldgen/templates/worldgen/index.html",
+			"settings":
+			{
+				"buffer_size": 7651,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "dndapp/worldgen/deletethis.py",
+			"settings":
+			{
+				"buffer_size": 108,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 104.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 576.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/dndapp",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/polls",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/static",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/static/worldgen",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndApp/static"
+	],
+	"file_history":
+	[
+		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/apps.py",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/polls/models.py",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/views.py",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/polls/views.py",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/polls/urls.py",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/dndapp/urls.py",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/urls.py",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndApp/dndGenerator.py",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndApp/.gitignore",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndApp/static/css/main.css",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndApp/buildingGen.py",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndApp/static/css/betterCheckbox.css",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndApp/templates/buildingstable.html",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndApp/templates/npctable.html",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndApp/static/js/npm.js",
+		"/C/Users/jzac9_000/AppData/Local/Temp/Rar$DIa0.960/Gruntfile.js",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndApp/static/styles/main.css",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndApp/charGen.py",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndApp/names.py",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndApp/hello.py",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndApp/templates/hello.html",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndApp/static/style.css",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndApp/human.male.name.py",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndApp/flask.py",
+		"/C/Users/jzac9_000/Documents/work/Web Design/Personal Projects/kiacalcu/dndnext.html",
+		"/C/Users/jzac9_000/Documents/work/Web Design/Personal Projects/kiacalcu/js/dndsheet.js",
+		"/C/Users/JZAC9_~1/AppData/Local/Temp/Rar$DRa0.416/Plex Media Server.log",
+		"/C/Users/JZAC9_~1/AppData/Local/Temp/Rar$DRa0.419/Plex DLNA Server.log",
+		"/C/Users/JZAC9_~1/AppData/Local/Temp/Rar$DRa0.057/Plex Media Server.log",
+		"/C/Users/jzac9_000/Desktop/logs/Plex DLNA Server.log",
+		"/C/Users/jzac9_000/Desktop/logs/Plex DLNA Server.1.log",
+		"/C/Users/jzac9_000/Documents/work/Web Design/Personal Projects/toDoList/ToDoList/js/script.js",
+		"/C/Users/jzac9_000/Documents/work/Web Design/Personal Projects/kiacalcu/js/kiacalc.js",
+		"/C/Users/jzac9_000/Documents/work/Web Design/Personal Projects/kiacalcu/css/custom.css",
+		"/C/Users/jzac9_000/Documents/work/Web Design/Personal Projects/kiacalcu/index.html",
+		"/C/Users/jzac9_000/Documents/work/Web Design/Personal Projects/factorioCalc/calc.js.old.js",
+		"/C/Users/jzac9_000/Documents/work/Web Design/Personal Projects/factorioCalc/index.html",
+		"/C/Users/jzac9_000/Documents/work/Web Design/Personal Projects/factorioCalc/calc.js",
+		"/C/Users/jzac9_000/Documents/work/Web Design/Personal Projects/toDoList/ToDoList/js/backgrounder.js",
+		"/C/Users/jzac9_000/Documents/work/Web Design/Personal Projects/toDoList/ToDoList/css/styles.css",
+		"/C/Users/jzac9_000/Documents/work/Web Design/Personal Projects/toDoList/ToDoList/index.html",
+		"/C/Users/jzac9_000/Documents/work/Web Design/Personal Projects/toDoList/ToDoList/toDoListProject.sublime-project",
+		"/C/Users/jzac9_000/Documents/work/Web Design/Personal Projects/toDoList/ToDoList/js/script from review.js",
+		"/C/Users/jzac9_000/Desktop/wordpress extract/wordpress/wp-config.php",
+		"/C/Users/jzac9_000/Documents/work/Web Design/Levy/LevyPublish/www/index.html",
+		"/C/Users/jzac9_000/Documents/work/Web Design/Personal Projects/toDoList/index.html",
+		"/C/Users/jzac9_000/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/jzac9_000/Documents/work/Web Design/Levy 1/www/engine1/style.css",
+		"/C/Users/jzac9_000/Documents/work/Web Design/Levy 1/www/cssslider.html",
+		"/C/Users/jzac9_000/Documents/work/Web Design/Levy 1/www/CSS Slider/engine1/style.css",
+		"/C/Users/jzac9_000/Documents/work/Web Design/Levy 1/www/CSS Slider/cssslider.html",
+		"/C/Users/jzac9_000/Documents/work/Web Design/Levy 1/www/css/navigation-style-1.css",
+		"/C/Users/jzac9_000/Documents/work/Web Design/Levy 1/www/style.css",
+		"/C/Users/jzac9_000/Desktop/www/index.html",
+		"/C/Users/jzac9_000/Documents/work/Web Design/Levy 1/www/index.html",
+		"/C/Users/jzac9_000/Desktop/b  - more of this girl .html",
+		"/C/Users/jzac9_000/Documents/work/Web Design/Levy 1/www/notes.txt",
+		"/C/Users/jzac9_000/Documents/work/Web Design/Levy 1/www/js/scripts.js",
+		"/C/Users/jzac9_000/Documents/work/Web Design/Levy 1/www/levylogo.gif",
+		"/C/Users/jzac9_000/Documents/work/Web Design/Levy 1/www/js/jquery.tweet.js",
+		"/C/Users/jzac9_000/Documents/work/Web Design/Levy 1/www/css/jquery.bxslider.css",
+		"/C/Users/jzac9_000/Documents/work/Web Design/Levy 1/www/css/prettyPhoto.css",
+		"/C/Users/jzac9_000/Documents/work/Web Design/Assets/Site templates/newave/www/index.html",
+		"/C/Users/jzac9_000/Google Drive/Web Development/Levy/index.html",
+		"/C/Users/jzac9_000/Google Drive/Web Development/Levy/css/main.css",
+		"/C/Users/jzac9_000/Google Drive/Web Development/Levy/css/bootstrap.css",
+		"/C/Users/jzac9_000/AppData/Roaming/Sublime Text 3/Packages/User/HTML chrome.sublime-build"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"C:\\Users\\jzac9_000\\Documents\\work\\Web Design\\Levy 1\\www"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"latest_question_list",
+			"Human",
+			"mydatabase",
+			"population",
+			"hamlet",
+			"30",
+			";\n",
+			"innerText",
+			"type",
+			"\n\t\t\t\t",
+			" <ul class=\"dropdown-menu dropdown-menu-right\">\n\t\t\t          <li><a href=\"#\">Action</a></li>\n\t\t\t          <li><a href=\"#\">Another action</a></li>\n\t\t\t          <li><a href=\"#\">Something else here</a></li>\n\t\t\t          <li role=\"separator\" class=\"divider\"></li>\n\t\t\t          <li><a href=\"#\">Separated link</a></li>\n\t\t\t        </ul>",
+			">\n",
+			"Size",
+			"wiggle",
+			"span",
+			"buildingList",
+			"buildings",
+			"charList1",
+			"(),\n",
+			"charList1",
+			"Elf",
+			"Stable",
+			"Elf",
+			"stables",
+			"Holysite",
+			"holysite",
+			"Enchanter",
+			"enchanter",
+			"Magic weps",
+			"magicweps",
+			"Jeweler",
+			"jeweler",
+			"Blacksmith",
+			"blacksmith",
+			"Alchemist",
+			"alchemist",
+			"Inn",
+			"inn",
+			"m-4",
+			"4",
+			"h5",
+			"h3",
+			"span",
+			"name=a",
+			"name=1",
+			"getXFromDB",
+			"firstName",
+			"}",
+			"that",
+			"data",
+			"buildingsSelection",
+			"\">\n",
+			"\t\t\t\t\n",
+			"]\n",
+			"requestedNpcs",
+			"selected",
+			"input",
+			"event",
+			")\n",
+			"\t\t\t<",
+			"data",
+			"    a = request.args.get('a', 0, type=int)\n    b = request.args.get('b', 0, type=int)\n    hello_world()\n",
+			">\n",
+			"\t\t\t\n",
+			"{}\n",
+			"lastName",
+			"firstName",
+			"n",
+			"Hello, World!",
+			".')",
+			")\n",
+			"))",
+			"npc",
+			"npcsToGen",
+			"print",
+			"s",
+			"=[]\n",
+			"name",
+			"for",
+			"generateRace",
+			"()",
+			"])",
+			"EFINE",
+			"]",
+			"[",
+			"names",
+			"main",
+			"192.168.1.68",
+			"192.168.1.20",
+			"192.168.1.13",
+			"192.168.1.68",
+			"192.168.1.212",
+			"oncl",
+			".checkbox label {\n  min-height: 20px;\n  padding-left: 20px;\n  margin-bottom: 0;\n  font-weight: normal;\n  cursor: pointer;\n}",
+			"col-md",
+			"cake",
+			"p",
+			"span",
+			");",
+			"custom",
+			"userO",
+			"userIn",
+			"customi",
+			"customI",
+			";\n",
+			"but",
+			"THISITEM",
+			"purpleChip",
+			"redChip",
+			"L3",
+			"L2",
+			"L1",
+			"odule3",
+			"module2",
+			"module1",
+			"purpleChip",
+			"redChip",
+			"RedChip",
+			"redChip",
+			"RedChip",
+			"redChip",
+			"GreenChip",
+			"greenChip",
+			"GreenChip",
+			"greenChip",
+			"GreenChip",
+			"greenChip",
+			"editToDoItem"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			")",
+			"("
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "dndapp/dndapp/settings.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3271,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1017,
+								1017
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "dndapp/worldgen/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1611,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								898,
+								898
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "dndapp/worldgen/admin.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 134,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								134,
+								134
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "dndapp/worldgen/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 162,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								113,
+								113
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "dndapp/worldgen/views.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 386,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								321,
+								321
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "dndapp/manage.py",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 804,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "dndapp/worldgen/templates/worldgen/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7651,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								783,
+								783
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jinja2/Syntaxes/HTML (Jinja2).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "dndapp/worldgen/deletethis.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 108,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								28,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "myProj.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"homepagecss.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 186.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
