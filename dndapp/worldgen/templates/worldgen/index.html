@@ -66,8 +66,10 @@
 				Village
 				</div>
 			</div>
-			<div id="buildingsToGen">
-				<form>
+			<form>
+			
+				<div id="buildingsToGen">
+					
 					<h3> Buildings </h3>
 					<div>
 						<input type="checkbox" data-width=100 data-size="small" checked data-toggle="toggle" name="inn" data-on="Inn" data-off="Inn">
@@ -79,11 +81,11 @@
 						<input type="checkbox" data-width=100 data-size="small" checked data-toggle="toggle" name="holysite" data-on="Holysite" data-off="Holysite">
 						<input type="checkbox" data-width=100 data-size="small" checked data-toggle="toggle" name="stables" data-on="Stable" data-off="Stable">
 					</div>					
-				</form>
-			</div>
-			<div id="npcsToGen">
-				<h3>NPC's</h3>
-				<form>	
+				
+				</div>
+				<div id="npcsToGen">
+					<h3>NPC's</h3>
+				
 					<div id="npcQuantInput">					
 						<h4>NPCs to Gen: </h4>
 						<input type=text size=5 id="rerollBtn" name=npcGenQuant value="10">
@@ -99,13 +101,9 @@
 					<input type="checkbox" data-width=100 data-size="small" checked data-toggle="toggle" name="elf" data-on="Elf" data-off="Elf">
 					<input type="checkbox" data-width=100 data-size="small" checked data-toggle="toggle" name="dwarf" data-on="Dwarf" data-off="Dwarf">
 					<input type="checkbox" data-width=100 data-size="small" checked data-toggle="toggle" name="dragonBorn" data-on="DragonBorn" data-off="DragonBorn">
-
-
-
-				</form>
+				</div>
 				<button type="button"  id="rerollAll" class="btn btn-primary btn-lg">Reroll that City!</button>	
-				
-			</div>			
+			</form>			
 		</div>
 		<div class="col-md-8 col-lg-7">
 			<div id="npcTable" class="panel panel-primary">
@@ -153,9 +151,9 @@
 				    <tbody>
 					{% for item in buildingList %}
 						<tr>
-							<td>{{item.type}}</td>
-				            <td>{{item.name}}</td>   
-						</tr>				
+					        <td>{{item.type}}</td>	
+					        <td>{{item.name}}</td>	
+						</tr>
 					{% endfor %}
 					</tbody>
 				</table>

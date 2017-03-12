@@ -1,12 +1,6 @@
 import random
 from .models import *
-#create the cursor and connection for the data DB
-#
-#VARIABLES
-#
 
-#possible builds in the town. 
-#non-db related
 buildings =[
 "Inn",
 "general Store",
@@ -54,18 +48,7 @@ age = [
 'is he dead?'
 ]
 
-#lastestHumanNames = Human_male_name.objects.order_by('name')
 
-
-#get all items from alist in DB
-"""
-def getItemsFromDb(item, table, connCursor=c):
-	returnList = []
-	for row in connCursor.execute('SELECT '+item+' FROM '+table+''):
-			if row[0] != None:
-				returnList.insert(0,row[0])
-	return returnList
-	"""
 def generateRace(requestedRace=0):
 	#reset variables
 	character = {}
@@ -78,20 +61,21 @@ def generateRace(requestedRace=0):
 		race = random.choice(Race.objects.all())
 		
 	else:
-		character['race'] = random.choice(Race.objects.all())
+		race = random.choice(Race.objects.all())
 
 	#build character details
 	character['race'] = race
 	character['gender'] = random.choice(gender)
-	character['lastName'] = random.choice(age)
-	character['firstName'] = random.choice(Human_male_name.objects.all())
-	character['personality1'] = random.choice(jobs)
-	character['personality2'] = random.choice(buildings)
-	character['age'] = random.choice(age)
-	#get all personality 1 types
-	#get all personality 2 tyoes
-	#a random data from generated lists, apply to character.
+	
+	if character['gender'] == "male":
+		character['firstName'] = random.choice(race.name_first_male_set.all())
+	else:
+		character['firstName'] = random.choice(race.name_first_female_set.all())
 
+	character['lastName'] = random.choice(race.name_last_set.all())
+	character['personality1'] = random.choice(Personality1.objects.all())
+	character['personality2'] = random.choice(Personality2.objects.all())
+	character['age'] = random.choice(age)
 	return(character)
 
 

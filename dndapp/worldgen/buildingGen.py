@@ -1,5 +1,5 @@
 import random
-
+from worldgen.models import *
 
 #create the cursor and connection for the data DB
 
@@ -18,22 +18,14 @@ buildings=[
 
 def generateBuilding(buildings=buildings):
 	#reset variables
-	
-	firstNames =[]
-	lastNames =[]
+	generatedBuilding = {}
 	listOfBuildings=[]
-	for building in buildings:
+	for buildingType in Building_type.objects.all():
 		generatedBuilding = {}
-		#get random race/gender
-		for row in c.execute('SELECT '+building+"1"+' FROM buildings'):
-			if row[0] != None:
-				firstNames.insert(0,row[0])
-
-		for row in c.execute('SELECT '+building+"2"+' FROM buildings'):
-			if row[0] != None:
-				lastNames.insert(0,row[0])
-		generatedBuilding['type'] = building
-		generatedBuilding['name'] = random.choice(firstNames) + " " + random.choice(lastNames)
-		
+		generatedBuilding['type'] = buildingType
+		firstName = random.choice(buildingType.building_name_first_set.all()).name
+		lastName = random.choice(buildingType.building_name_last_set.all()).name
+		generatedBuilding['name'] =  firstName+ " " + lastName
 		listOfBuildings.insert(0,generatedBuilding)
+	
 	return(listOfBuildings)

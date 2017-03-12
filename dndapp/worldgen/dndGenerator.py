@@ -16,10 +16,5 @@ def genChar(chars=0, toGen=10):
 
 def genBuilding(buildings=0):
 	buildingList =[]
-	if buildings == 0:
-		buildingList = buildingGen.generateBuilding()
-	elif not buildings:
-		buildingList = buildingGen.generateBuilding()
-	else:
-		buildingList = buildingGen.generateBuilding(buildings)
+	buildingList = buildingGen.generateBuilding()
 	return buildingList
