@@ -29,26 +29,33 @@ def index(request):
         #process the form and get selected options
         selectedBuildings = returnFormSelection(GenOptionsBuildings(request.POST))
         selectedNpcs = returnFormSelection(GenOptionsNpcs(request.POST))      
-        
-        #for testing, stringify response and push to HTTPresp
-        total = str(selectedBuildings) + str(selectedNpcs)
-        return HttpResponse(total)
-        characterList= genChar(['Human'],10)
+        quantNpcs = GenOptionsNpcsQuant(request.POST)
+        #will find if max value is exceded (umoung other things)
+        if quantNpcs.is_valid():
+            quantNpcs = quantNpcs['npcQuant'].data
+            characterList= genChar(selectedNpcs, int(quantNpcs))
+        else:
+            characterList= genChar(selectedNpcs, 10)
+       
         buildingList = genBuilding()
 
+    # Non form submitted page:
     else:   
-        #characterList= genChar(['Human', 'Gnome'],10)
         characterList= genChar(0,10)
         buildingList = genBuilding()
 
     genBuildingsForm = GenOptionsBuildings()
     genNpcsForm = GenOptionsNpcs()
+    genNpcsQuantForm = GenOptionsNpcsQuant()
 
     context = {
+    ## form variables
     'charList': characterList,
     'buildingList': buildingList,
+    ## forms
     'genBuildingsForm': genBuildingsForm,
-    'genNpcsForm': genNpcsForm
+    'genNpcsForm': genNpcsForm,
+    'genNpcsQuantForm': genNpcsQuantForm
     }
 
     return render(request, 'worldgen/index.html', context)

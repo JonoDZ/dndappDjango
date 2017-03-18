@@ -55,12 +55,12 @@ def generateRace(requestedRaces=0):
 	lastName =[]
 	personality=[]
 	charRace =[]
+	races=[]
 	#if user has specified a race
 	if (requestedRaces == 0):
 		race = random.choice(Race.objects.all())
 		
-	else:
-		races=[]
+	else:	
 		for raceChoice in requestedRaces:
 			races.insert(0,Race.objects.filter(race__startswith=raceChoice))
 		race = random.choice(races)[0]

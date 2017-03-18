@@ -1,5 +1,6 @@
 from django import forms
 from .models import *
+
 def attrs(Race):
 		return {'class': 'special', 'data-width': '100', 'data-size': 'small', 'data-toggle': 'toggle', 'name': Race, 'data-on': Race, 'data-off':Race}
 
@@ -25,10 +26,13 @@ class GenOptionsNpcs(forms.Form):
 
 	Tiefling = forms.BooleanField(label ='', initial=True, required=False, widget=forms.CheckboxInput(attrs=attrs('Tiefling')))
 	Human = forms.BooleanField(label ='', initial=True, required=False, widget=forms.CheckboxInput(attrs=attrs('Human')))
-	Halforc = forms.BooleanField(label ='', initial=True, required=False, widget=forms.CheckboxInput(attrs=attrs('HalfOrc')))
-	Halfing = forms.BooleanField(label ='', initial=True, required=False, widget=forms.CheckboxInput(attrs=attrs('Halfling')))
-	Halfelf = forms.BooleanField(label ='', initial=True, required=False, widget=forms.CheckboxInput(attrs=attrs('HalfElf')))
+	HalfOrc = forms.BooleanField(label ='', initial=True, required=False, widget=forms.CheckboxInput(attrs=attrs('HalfOrc')))
+	Halfling = forms.BooleanField(label ='', initial=True, required=False, widget=forms.CheckboxInput(attrs=attrs('Halfling')))
+	HalfElf = forms.BooleanField(label ='', initial=True, required=False, widget=forms.CheckboxInput(attrs=attrs('HalfElf')))
 	Gnome = forms.BooleanField(label ='', initial=True, required=False, widget=forms.CheckboxInput(attrs=attrs('Gnome')))
 	Elf = forms.BooleanField(label ='', initial=True, required=False, widget=forms.CheckboxInput(attrs=attrs('Elf')))
 	Dwarf = forms.BooleanField(label ='', initial=True, required=False, widget=forms.CheckboxInput(attrs=attrs('Dwarf')))
 	Dragonborn = forms.BooleanField(label ='', initial=True, required=False, widget=forms.CheckboxInput(attrs=attrs('DragonBorn')))
+
+class GenOptionsNpcsQuant(forms.Form):
+	npcQuant = forms.IntegerField(label ='', min_value=1, initial=10, max_value=100, required=False, widget=forms.NumberInput(attrs=attrs({'id': 'rerollBtn', 'size':'5'})))
