@@ -66,44 +66,27 @@
 				Village
 				</div>
 			</div>
-			<form>
+			<form action="/world/" method="post" novalidate>
+    			{% csrf_token %}
 			
-				<div id="buildingsToGen">
-					
+				<div id="buildingsToGen">			
 					<h3> Buildings </h3>
 					<div>
-						<input type="checkbox" data-width=100 data-size="small" checked data-toggle="toggle" name="inn" data-on="Inn" data-off="Inn">
-						<input type="checkbox" data-width=100 data-size="small" checked data-toggle="toggle" name="alchemist" data-on="Alchemist" data-off="Alchemist">
-						<input type="checkbox" data-width=100 data-size="small" checked data-toggle="toggle" name="blacksmith" data-on="Blacksmith" data-off="Blacksmith">
-						<input type="checkbox" data-width=100 data-size="small" checked data-toggle="toggle" name="jeweler" data-on="Jeweler" data-off="Jeweler">
-						<input type="checkbox" data-width=100 data-size="small" checked data-toggle="toggle" name="magicweps" data-on="Magic weps" data-off="Magic weps">
-						<input type="checkbox" data-width=100 data-size="small" checked data-toggle="toggle" name="enchanter" data-on="Enchanter" data-off="Enchanter">
-						<input type="checkbox" data-width=100 data-size="small" checked data-toggle="toggle" name="holysite" data-on="Holysite" data-off="Holysite">
-						<input type="checkbox" data-width=100 data-size="small" checked data-toggle="toggle" name="stables" data-on="Stable" data-off="Stable">
-					</div>					
-				
+						{{ genBuildingsForm }}
+					</div>	
 				</div>
+
 				<div id="npcsToGen">
 					<h3>NPC's</h3>
-				
 					<div id="npcQuantInput">					
 						<h4>NPCs to Gen: </h4>
 						<input type=text size=5 id="rerollBtn" name=npcGenQuant value="10">
 					</div>
-
-
-					<input type="checkbox" data-width=100 data-size="small" checked data-toggle="toggle" name="tiefling" data-on="Tiefling" data-off="Tiefling">
-					<input type="checkbox" data-width=100 data-size="small" checked data-toggle="toggle" name="human" data-on="Human" data-off="Human">
-					<input type="checkbox" data-width=100 data-size="small" checked data-toggle="toggle" name="halfOrc" data-on="HalfOrc" data-off="HalfOrc">
-					<input type="checkbox" data-width=100 data-size="small" checked data-toggle="toggle" name="halfling" data-on="Halfling" data-off="Halfling">
-					<input type="checkbox" data-width=100 data-size="small" checked data-toggle="toggle" name="halfelf" data-on="HalfElf" data-off="HalfElf">
-					<input type="checkbox" data-width=100 data-size="small" checked data-toggle="toggle" name="gnome" data-on="Gnome" data-off="Gnome">
-					<input type="checkbox" data-width=100 data-size="small" checked data-toggle="toggle" name="elf" data-on="Elf" data-off="Elf">
-					<input type="checkbox" data-width=100 data-size="small" checked data-toggle="toggle" name="dwarf" data-on="Dwarf" data-off="Dwarf">
-					<input type="checkbox" data-width=100 data-size="small" checked data-toggle="toggle" name="dragonBorn" data-on="DragonBorn" data-off="DragonBorn">
+					{{ genNpcsForm }}
 				</div>
-				<button type="button"  id="rerollAll" class="btn btn-primary btn-lg">Reroll that City!</button>	
-			</form>			
+
+				<button type="submit"  id="rerollAll" class="btn btn-primary btn-lg">Reroll that City!</button>	
+			</form>		
 		</div>
 		<div class="col-md-8 col-lg-7">
 			<div id="npcTable" class="panel panel-primary">

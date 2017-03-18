@@ -1,0 +1,29 @@
+<form action="/world/get_name/" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit" />
+</form>
+
+
+
+{{ form.non_field_errors }}
+<div class="fieldWrapper">
+    {{ form.your_name.errors }}
+    <label for="{{ form.your_name.id_for_label }}">Name:</label>
+    {{ form.your_name }}
+</div>
+<div class="fieldWrapper">
+    {{ form.thisThing.errors }}
+    <label for="{{ form.thisThing.id_for_label }}">ThisThing:</label>
+    {{ form.thisThing }}
+</div>
+<div class="fieldWrapper">
+    {{ form.thatThing.errors }}
+    <label for="{{ form.thatThing.id_for_label }}">thatThing</label>
+    {{ form.thatThing }}
+</div>
+<div class="fieldWrapper">
+    {{ form.our_name.errors }}
+    <label for="{{ form.our_name.id_for_label }}">our_name</label>
+    {{ form.our_name }}
+</div>
