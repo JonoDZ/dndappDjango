@@ -48,8 +48,7 @@ age = [
 'is he dead?'
 ]
 
-
-def generateRace(requestedRace=0):
+def generateRace(requestedRaces=0):
 	#reset variables
 	character = {}
 	firstName =[]
@@ -57,12 +56,14 @@ def generateRace(requestedRace=0):
 	personality=[]
 	charRace =[]
 	#if user has specified a race
-	if (requestedRace == 0):
+	if (requestedRaces == 0):
 		race = random.choice(Race.objects.all())
 		
 	else:
-		race = random.choice(Race.objects.all())
-
+		races=[]
+		for raceChoice in requestedRaces:
+			races.insert(0,Race.objects.filter(race__startswith=raceChoice))
+		race = random.choice(races)[0]
 	#build character details
 	character['race'] = race
 	character['gender'] = random.choice(gender)
