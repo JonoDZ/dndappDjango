@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponseRedirect, HttpResponse
 from .models import *
 from .forms import *
+from random import randint
 from worldgen.dndGenerator import *
 # Create your views here.
 
@@ -22,28 +23,37 @@ def returnFormSelection(uncleanedDjangoForm):
     #if form isnt valid
     else:
         return "form isnt valid"
-
+newSeed = randint(0,9999)
 def index(request):
-
+    newSeed = randint(0,9999)
     if request.method == 'POST':
         #process the form and get selected options
+        seed =GenOptionsSeed(request.POST)
         selectedBuildings = returnFormSelection(GenOptionsBuildings(request.POST))
         selectedNpcs = returnFormSelection(GenOptionsNpcs(request.POST))      
         quantNpcs = GenOptionsNpcsQuant(request.POST)
         #will find if max value is exceded (umoung other things)
+        """
+        if seed.is_valid():
+            if seed['seed'].data:
+                newSeed= int(seed['seed'].data)
+            else:
+                newSeed = randint(0,9999)
+        """
         if quantNpcs.is_valid():
             quantNpcs = quantNpcs['npcQuant'].data
-            characterList= genChar(selectedNpcs, int(quantNpcs))
+            characterList= genChar(selectedNpcs, int(quantNpcs), newSeed)
         else:
-            characterList= genChar(selectedNpcs, 10)
+            characterList= genChar(selectedNpcs, 10, newSeed)
        
         buildingList = genBuilding()
 
-    # Non form submitted page:
+    # Non-POST form submitted page:
     else:   
         characterList= genChar(0,10)
         buildingList = genBuilding()
 
+    genSeedForm = GenOptionsSeed(initial={'seed': newSeed})
     genBuildingsForm = GenOptionsBuildings()
     genNpcsForm = GenOptionsNpcs()
     genNpcsQuantForm = GenOptionsNpcsQuant()
@@ -53,6 +63,7 @@ def index(request):
     'charList': characterList,
     'buildingList': buildingList,
     ## forms
+    'genSeedForm': genSeedForm,
     'genBuildingsForm': genBuildingsForm,
     'genNpcsForm': genNpcsForm,
     'genNpcsQuantForm': genNpcsQuantForm

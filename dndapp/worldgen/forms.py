@@ -1,8 +1,11 @@
 from django import forms
 from .models import *
-
+from random import randint
 def attrs(Race):
 		return {'class': 'special', 'data-width': '100', 'data-size': 'small', 'data-toggle': 'toggle', 'name': Race, 'data-on': Race, 'data-off':Race}
+
+class GenOptionsSeed(forms.Form):
+	seed = forms.IntegerField(label ='', min_value=1, max_value=1000000, required=False, widget=forms.NumberInput())
 
 class GenOptionsBuildings(forms.Form):
 
@@ -17,12 +20,6 @@ class GenOptionsBuildings(forms.Form):
 	Enchanter = forms.BooleanField(label ='', initial=True, required=False, widget=forms.CheckboxInput(attrs=attrs('Enchanter')))
 
 class GenOptionsNpcs(forms.Form):
-
-	#Race.objects.get(pk=1)
-	#race = random.choice(Race.objects.all())
-
-	#build character details
-	#character['race'] = race
 
 	Tiefling = forms.BooleanField(label ='', initial=True, required=False, widget=forms.CheckboxInput(attrs=attrs('Tiefling')))
 	Human = forms.BooleanField(label ='', initial=True, required=False, widget=forms.CheckboxInput(attrs=attrs('Human')))

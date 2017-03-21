@@ -68,6 +68,7 @@
 			</div>
 			<form action="/world/" method="post" novalidate>
     			{% csrf_token %}
+    			{{ genSeedForm }}
 			
 				<div id="buildingsToGen">			
 					<h3> Buildings </h3>
