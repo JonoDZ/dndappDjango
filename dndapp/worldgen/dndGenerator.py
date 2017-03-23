@@ -7,11 +7,11 @@ def genChar(chars=0, toGen=10, seed=0):
 	charlist =[]
 	#generate seed if not supplied
 	if seed == 0:
-		seed = random.randint(0,9999999)
+		seed = random.random()
 
 	#set the seed, then, generate npc seed1s
 	random.seed(seed)
-	npcGenSeeds = [random.randint(0,9999999) for _ in range(toGen)]
+	npcGenSeeds = [random.random() for _ in range(toGen)]
 
 	if chars == 0 or not chars:	
 		for i, NpcSeed in enumerate(npcGenSeeds):

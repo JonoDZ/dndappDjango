@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponseRedirect, HttpResponse
 from .models import *
 from .forms import *
-from random import randint
+import random
 from worldgen.dndGenerator import *
 # Create your views here.
 
@@ -23,9 +23,11 @@ def returnFormSelection(uncleanedDjangoForm):
     #if form isnt valid
     else:
         return "form isnt valid"
-newSeed = randint(0,9999)
+
+newSeed = random.random()
+
 def index(request):
-    newSeed = randint(0,9999)
+    newSeed = random.random()
     if request.method == 'POST':
         #process the form and get selected options
         seed =GenOptionsSeed(request.POST)

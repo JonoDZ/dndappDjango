@@ -1,5 +1,180 @@
 from worldgen.models import *
-# from worldgen.dataimporter import *
+
+## buildings
+buildingTypes =[
+"Stables",
+"Holysite",
+"Magic Wepons",
+"Enchanter",
+"Jeweler",
+"Blacksmith",
+"Alchemist",
+"Inn"
+]
+buildingName = [{
+'buildingType':'Stables',
+'buildingNameFirst': [
+"The bitter",
+"The Little",
+"The Chipper"
+],
+'buildingNameSecond': [
+"Whinney",
+"Stable",
+"Horse",
+"Pony"
+]},
+## HolySite
+{
+'buildingType':'Holysite',
+'buildingNameFirst': [
+"worshippers",
+"gods",
+"the lords",
+"dragonclan",
+"plane shifts"
+],
+'buildingNameSecond': [
+"house",
+"temple",
+"pray kingdom"
+]},
+## MagicWeps
+{
+'buildingType':'Magic Wepons',
+'buildingNameFirst': [
+"Wizards and Wonderous",
+"Marvelous Magical",
+"An Arcanist's",
+"Wizards Do It With"
+],
+'buildingNameSecond': [
+"Wands",
+"Staves",
+"Rods",
+"Tomes"
+]},
+## Enchanter
+{
+'buildingType':'Enchanter',
+'buildingNameFirst': [
+"A touch of",
+"Magic Makes",
+"The Enchanter's",
+"The Insanity of",
+"Nimredhel's"
+],
+'buildingNameSecond': [
+"Wonder",
+"Magnificence",
+"Arcanity",
+"Wizardry"
+]},
+## Jeweler
+{
+'buildingType':'Jeweler',
+'buildingNameFirst': [
+"The Shiny",
+"Magnificently Sparkling",
+"Wondrously Amazing",
+"Blindingly Bright",
+"The Unicorn's",
+"Marvelous"
+],
+'buildingNameSecond': [
+"Bling",
+"Jewels",
+"Gems, Jewels, and Jade",
+"Rings",
+"Baubles",
+"Gems",
+"Chains",
+"Amulets",
+"Chokers"
+]},
+## Blacksmith
+{
+'buildingType':'Blacksmith',
+'buildingNameFirst': [
+"The Hammer and the",
+"Hot Pokers and",
+"The Sweat of the",
+"High Pressure",
+"The Exalted",
+"The Minotaur's"
+],
+'buildingNameSecond': [
+"Swords",
+"Steelworks",
+"Breastplates",
+"Anvils",
+"Leather and Chain",
+"Arsenal",
+"Furnace",
+"Arms"
+]},
+## Alchemist
+{
+'buildingType':'Alchemist',
+'buildingNameFirst': [
+"Bubbling",
+"Potions and",
+"Alchemical",
+"Brewing up Some",
+"Wondrous",
+"The Naga's",
+"The Unicorn's",
+"The Griffon's",
+"The Unicorn's"
+],
+'buildingNameSecond': [
+"Potions",
+"Beakers",
+"Vials",
+"Concoctions",
+"Apothecary",
+"Alchemy",
+"Philtres"
+]},
+## Inn
+{
+'buildingType':'Inn',
+'buildingNameFirst': [
+"The Wicked",
+"The Wandering",
+"The Sunken",
+"The Sleeping",
+"The Silver",
+"The Scarlett",
+"The Pirate's",
+"The Hond and",
+"The Half-Full",
+"The Golden",
+"The Crossed",
+"The Cozy",
+"The Angry",
+"A Wink and a"
+],
+'buildingNameSecond': [
+"Giant",
+"Kiss",
+"Dragon",
+"Alehouse",
+"Fox",
+"Flagon",
+"Cask",
+"Mug",
+"Arrows",
+"Cup",
+"Jester"
+]}
+]
+##
+##
+##
+##
+##
+## humanoids
 Races = [
 "Tiefling",
 "HalfOrc",
@@ -11,7 +186,77 @@ Races = [
 "Gnome",
 "Elf"
 ]
-
+appearance = [
+"large",
+"thin",
+"fat"
+]
+personality1 = [
+"Cautious",
+"Delightful",
+"Helpful",
+"gloomy",
+"Shrewd",
+"Honest",
+"Ponderous",
+"Friendly",
+"Friendly",
+"Friendly",
+"Friendly",
+"urious",
+"Intelligent",
+"Wise",
+"Kind",
+"Intelligent",
+"Wise",
+"Kind",
+"Rude",
+"Blustering",
+"Quiet",
+"Friendly",
+"Friendly",
+"Friendly",
+"Friendly",
+"Curious",
+"Argumentative",
+"Arrogant",
+"Honest",
+"Ponderous",
+"Annoyed",
+"Tired",
+"Friendly",
+"Jovial",
+"Grumpy",
+"Cautious"
+]
+personality2 = [
+"Always Jokes",
+"Optimistic",
+"Speaks in 3rd Person",
+"Crazy",
+"CAN'T speak to women",
+"learning to read",
+"Wants to be liked",
+"Fidget",
+"Use Long Words",
+"Tap Fingers",
+"Uses Wrong Words",
+"Squint",
+"Chews on Things",
+"Boistrous",
+"Hums",
+"High Voice",
+"Speak in Rhyme",
+"Bite His Fingernails",
+"Sucker for a Pretty Face",
+"Tired",
+"Friendly",
+"Jovial",
+"Terrible Negotiator",
+"Cautious",
+"notfunny",
+"funny"
+]
 Name = [
 ## ELF
 {
@@ -1233,6 +1478,31 @@ Name = [
 ]},
 """
 
+def buildingImporter():
+	for building in buildingTypes:
+		if Building_type.objects.filter(buildingType=building):
+			continue
+		else:
+			r = Building_type(buildingType=building)
+			r.save()
+
+def buildingNameImporter():
+	for name in buildingName:
+		b = name['buildingType']
+		print(b)
+		building = Building_type.objects.get(buildingType=b)
+		for thisName in name['buildingNameFirst']:
+			if building.building_name_first_set.filter(name=thisName):
+				continue
+			else:
+				building.building_name_first_set.create(name=thisName)
+
+		for thisName in name['buildingNameSecond']:
+			if building.building_name_last_set.filter(name=thisName):
+				continue
+			else:
+				building.building_name_last_set.create(name=thisName)
+
 def raceImporter():
 	for race in Races:
 		if Race.objects.filter(race=race):
@@ -1264,3 +1534,36 @@ def nameImporter():
 				continue
 			else:
 				race.name_last_set.create(name=thisName)
+
+
+def personality1Importer():
+	for personality in personality1:
+		if Personality1.objects.filter(personailty=personality):
+			continue
+		else:
+			r = Personality1(personailty=personality)
+			r.save()
+
+def personality2Importer():
+	for personality in personality2:
+		if Personality2.objects.filter(personailty=personality):
+			continue
+		else:
+			r = Personality2(personailty=personality)
+			r.save()
+
+def appearanceImporter():
+	for item in appearance:
+		if Appearance.objects.filter(Appearance=item):
+			continue
+		else:
+			r = Appearance(Appearance=item)
+			r.save()
+buildingName
+
+def humanoidTotalReimporter():
+	raceImporter()
+	nameImporter()
+	personality1Importer()
+	personality2Importer()
+	appearanceImporter()

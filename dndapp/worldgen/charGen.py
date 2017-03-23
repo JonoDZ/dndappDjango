@@ -71,10 +71,12 @@ def generateRace(seed, requestedRaces=0):
 	character['gender'] = random.choice(gender)
 	
 	random.seed(seed)
+	
 	if character['gender'] == "male":
 		character['firstName'] = random.choice(race.name_first_male_set.all())
 	else:
 		character['firstName'] = random.choice(race.name_first_female_set.all())
+	
 	random.seed(seed)
 	character['lastName'] = random.choice(race.name_last_set.all())
 	random.seed(seed)

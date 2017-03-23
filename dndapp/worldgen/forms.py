@@ -5,7 +5,7 @@ def attrs(Race):
 		return {'class': 'special', 'data-width': '100', 'data-size': 'small', 'data-toggle': 'toggle', 'name': Race, 'data-on': Race, 'data-off':Race}
 
 class GenOptionsSeed(forms.Form):
-	seed = forms.IntegerField(label ='', min_value=1, max_value=1000000, required=False, widget=forms.NumberInput())
+	seed = forms.IntegerField(label ='', required=False, widget=forms.NumberInput())
 
 class GenOptionsBuildings(forms.Form):
 
