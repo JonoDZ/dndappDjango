@@ -1463,6 +1463,30 @@ Name = [
 ]}
 ]
 
+drinkName = [
+"fireBeard",
+"darkPit",
+"athousand Sorrow",
+"despair",
+"battleaxe",
+"giantfoot"
+]
+
+drinkType = [
+"Brandy",
+"Sherry",
+"Beer",
+"Beer",
+"Ale",
+"Ale",
+"Stout",
+"Stout",
+"Whiskey",
+"Clearshot",
+"Wine "
+]
+
+
 ## elf, human, gnome, dragonborn,dwarf, halfElf
 ## halfling, halfOrc
 """
@@ -1478,13 +1502,21 @@ Name = [
 ]},
 """
 
-def buildingImporter():
-	for building in buildingTypes:
-		if Building_type.objects.filter(buildingType=building):
+def singleListImporter(listOfEntries, modelName, modelField):
+	for item in listOfEntries:
+		kwargs ={modelField : item}
+		if modelName.objects.filter(**kwargs):
 			continue
 		else:
-			r = Building_type(buildingType=building)
+			r = modelName(**kwargs)
 			r.save()
+
+def drinkImporter():
+	singleListImporter(drinkName, Drink_name,"drinkName")
+	singleListImporter(drinkType, Drink_type,"drinkType")
+
+def buildingImporter():
+	singleListImporter(buildingTypes, Building_type, "buildingType")
 
 def buildingNameImporter():
 	for name in buildingName:
@@ -1504,12 +1536,7 @@ def buildingNameImporter():
 				building.building_name_last_set.create(name=thisName)
 
 def raceImporter():
-	for race in Races:
-		if Race.objects.filter(race=race):
-			continue
-		else:
-			r = Race(race=race)
-			r.save()
+	singleListImporter(Races, Race, "race")
 
 def nameImporter():
 	for name in Name:
@@ -1535,35 +1562,24 @@ def nameImporter():
 			else:
 				race.name_last_set.create(name=thisName)
 
-
-def personality1Importer():
-	for personality in personality1:
-		if Personality1.objects.filter(personailty=personality):
-			continue
-		else:
-			r = Personality1(personailty=personality)
-			r.save()
-
-def personality2Importer():
-	for personality in personality2:
-		if Personality2.objects.filter(personailty=personality):
-			continue
-		else:
-			r = Personality2(personailty=personality)
-			r.save()
+def personalityImporter():
+	singleListImporter(personality1, Personality1, "personailty")
+	singleListImporter(personality2, Personality2, "personailty")
 
 def appearanceImporter():
-	for item in appearance:
-		if Appearance.objects.filter(Appearance=item):
-			continue
-		else:
-			r = Appearance(Appearance=item)
-			r.save()
-buildingName
+	singleListImporter(appearance, Appearance, "Appearance")
 
-def humanoidTotalReimporter():
+
+def humanoidTotal():
 	raceImporter()
 	nameImporter()
-	personality1Importer()
-	personality2Importer()
+	personalityImporter()
 	appearanceImporter()
+
+def buildingTotal():
+	buildingImporter()
+	buildingNameImporter()
+
+def masterTotal():
+	humanoidTotal()
+	buildingTotal()

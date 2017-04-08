@@ -5,7 +5,7 @@ from .forms import *
 import random
 from worldgen.dndGenerator import *
 # Create your views here.
-
+# import pdb; pdb.set_trace()
 items = [
 
 ]
@@ -54,6 +54,7 @@ def index(request):
     else:   
         characterList= genChar(0,10)
         buildingList = genBuilding()
+        drinksList = genDrinks()
 
     genSeedForm = GenOptionsSeed(initial={'seed': newSeed})
     genBuildingsForm = GenOptionsBuildings()
@@ -68,7 +69,9 @@ def index(request):
     'genSeedForm': genSeedForm,
     'genBuildingsForm': genBuildingsForm,
     'genNpcsForm': genNpcsForm,
-    'genNpcsQuantForm': genNpcsQuantForm
+    'genNpcsQuantForm': genNpcsQuantForm,
+    ##building details
+    'drinkNames' : drinksList
     }
 
     return render(request, 'worldgen/index.html', context)

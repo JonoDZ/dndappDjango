@@ -42,6 +42,9 @@
 			</div>
 		</div>
 
+		<!--
+		START OF SIDEBAR
+		-->
 		<div id="sidebar" class="well well-sm">
 			
 			<div id="saveLoadRest">
@@ -89,7 +92,13 @@
 
 				<button type="submit"  id="rerollAll" class="btn btn-primary btn-lg">Reroll that City!</button>	
 			</form>		
-		</div>
+		</div> 
+		<!-- end of sidebar -->
+
+		<!--
+		START OF MAIN PAGE
+		-->
+
 		<div class="col-md-8 col-lg-7">
 			<div id="npcTable" class="panel panel-primary">
 				<div class="panel-heading"> <h3> NPCs </h3></div>
@@ -135,7 +144,7 @@
 				    </thead>
 				    <tbody>
 					{% for item in buildingList %}
-						<tr>
+						<tr data-toggle="modal" data-target="#modal-{{item.type}}">
 					        <td>{{item.type}}</td>	
 					        <td>{{item.name}}</td>	
 						</tr>
@@ -144,5 +153,16 @@
 				</table>
 			</div>
 		</div>
+		<!--
+		END OF MAIN PAGE
+		-->
+
+		<!--
+		MODAL DECLARATION
+		-->
+
+		{% include "worldgen/modal.html" %}
+
+		
 </body>
   	

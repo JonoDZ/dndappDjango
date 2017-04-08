@@ -25,7 +25,7 @@ SECRET_KEY = '(abpd$@d$fo17)#0=5z$f*9*&0j_r1xjs*g6^+w6k&=ki(&+x$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.1.11']
+ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
@@ -76,13 +76,20 @@ WSGI_APPLICATION = 'dndapp.wsgi.application'
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
 DATABASES = {
+
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql',
+#        'NAME': 'dndapp',
+#        'USER': 'dndappuser',
+#        'PASSWORD': 'dndapppassword',
+#        'HOST': '127.0.0.1',
+#        'PORT': '5432',
+#    }
+
+
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dndapp',
-        'USER': 'dndappuser',
-        'PASSWORD': 'dndapppassword',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'dndsqlite',
     }
 }
 

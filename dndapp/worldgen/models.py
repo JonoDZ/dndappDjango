@@ -72,3 +72,19 @@ class Building_name_last(models.Model):
     name = models.CharField(max_length=60)
     def __str__(self):
         return self.name
+
+################
+################
+### OBJECTS ####
+################
+################
+
+class Drink_name(models.Model):
+    drinkName = models.CharField(max_length=60)
+    def __str__(self):
+        return self.drinkName
+        
+class Drink_type(models.Model):
+    drinkType = models.CharField(max_length=20)
+    def __str__(self):
+        return self.drinkType

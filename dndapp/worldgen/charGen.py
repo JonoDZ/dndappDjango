@@ -51,8 +51,6 @@ age = [
 def generateRace(seed, requestedRaces=0):
 	#reset variables
 	character = {}
-	firstName =[]
-	lastName =[]
 	personality=[]
 	charRace =[]
 	races=[]
@@ -83,8 +81,8 @@ def generateRace(seed, requestedRaces=0):
 	character['personality1'] = random.choice(Personality1.objects.all())
 	random.seed(seed)
 	character['personality2'] = random.choice(Personality2.objects.all())
-	random.seed(seed)
-	character['age'] = random.choice(age)
+	#random.seed(seed)
+	#character['age'] = random.choice(age)
 	return(character)
 
 

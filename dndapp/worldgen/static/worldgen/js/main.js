@@ -6,20 +6,11 @@
 	{
 	    return Math.floor(Math.random()*(max-min+1)+min);
 	}
-/*
-  $(function() {
 
-  	//ON REROLL
-    $('#rerollAll').bind('click', function() {
-      var npcQuant = $('input[name="npcGenQuant"]').val();
-      window.location.href = "//192.168.1.11:8000/world/"+npcQuant+"/regennpcs/";
-
-    });
-  });
-*/
   /////////////////
   // side menu updater
   //////////////////
+
  $(function(){
 
  	var population = 0;

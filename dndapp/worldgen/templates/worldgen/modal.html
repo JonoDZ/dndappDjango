@@ -1,0 +1,90 @@
+<div class="container">
+  <h2>click a building for a modal</h2>
+  <!-- Trigger the modal with a button -->
+
+  <!-- Modal INN-->
+  <div class="modal fade" id="modal-Inn" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Inn Details</h4>
+        </div>
+        <div class="modal-body">
+
+			<h3>Owner</h3>				
+			<span>{{charList.0.firstName}} {{charList.0.lastName}} {{charList.0.race}}</span>
+
+	        <hr>
+	        <h3>Drinks</h3>
+        	{% for drink in drinkNames %}
+          		<p>{{ drink }}</p>
+        	{% endfor %}
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- End Modal -->
+
+    <!-- Modal ALCHEMIST-->
+  <div class="modal fade" id="modal-Alchemist" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Alchemist Details</h4>
+        </div>
+        <div class="modal-body">
+
+			<h3>Owner</h3>				
+			<span>{{charList.1.firstName}} {{charList.1.lastName}} {{charList.1.race}}</span>
+	        <hr>
+	        <h3>Shop</h3>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- End Modal -->
+
+    <!-- Modal BLACKSMITH-->
+  <div class="modal fade" id="modal-Blacksmith" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Blacksmith Details</h4>
+        </div>
+        <div class="modal-body">
+
+			<h3>Owner</h3>				
+			<span>{{charList.2.firstName}} {{charList.2.lastName}} {{charList.2.race}}</span>
+	        <hr>
+	        <h3>Shop</h3>
+        	
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- End Modal -->
+  
+</div>

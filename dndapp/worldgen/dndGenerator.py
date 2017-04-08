@@ -1,5 +1,6 @@
 import worldgen.charGen as charGen
 import worldgen.buildingGen as buildingGen
+from worldgen.generators import *
 import random
 
 
@@ -25,3 +26,11 @@ def genBuilding(buildings=0):
 	buildingList =[]
 	buildingList = buildingGen.generateBuilding()
 	return buildingList
+
+def genDrinks(seed=0):
+	if seed == 0:
+		seed = random.random()
+
+	drinkList =[]
+	drinkList = generateDrinks(seed)
+	return drinkList
