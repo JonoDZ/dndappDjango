@@ -1,6 +1,9 @@
 from django import forms
 from .models import *
 from random import randint
+
+building_type_count = Building_type.objects.count()
+
 def attrs(Race):
 		return {'class': 'special', 'data-width': '100', 'data-size': 'small', 'data-toggle': 'toggle', 'name': Race, 'data-on': Race, 'data-off':Race}
 
@@ -32,4 +35,4 @@ class GenOptionsNpcs(forms.Form):
 	Dragonborn = forms.BooleanField(label ='', initial=True, required=False, widget=forms.CheckboxInput(attrs=attrs('DragonBorn')))
 
 class GenOptionsNpcsQuant(forms.Form):
-	npcQuant = forms.IntegerField(label ='', min_value=1, initial=10, max_value=100, required=False, widget=forms.NumberInput(attrs=attrs({'id': 'rerollBtn', 'size':'5'})))
+	npcQuant = forms.IntegerField(label ='', min_value=building_type_count, initial=building_type_count, max_value=100, required=False, widget=forms.NumberInput(attrs=attrs({'id': 'rerollBtn', 'size':'5'})))

@@ -65,7 +65,7 @@ def generateRace(seed, requestedRaces=0):
 		race = random.choice(races)[0]
 	#build character details
 	character['race'] = race
-	random.seed(seed)
+	random.seed()
 	character['gender'] = random.choice(gender)
 	
 	random.seed(seed)

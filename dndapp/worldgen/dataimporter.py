@@ -1,5 +1,5 @@
 from worldgen.models import *
-
+from worldgen.didrugs import *
 ## buildings
 buildingTypes =[
 "Stables",
@@ -1511,6 +1511,8 @@ def singleListImporter(listOfEntries, modelName, modelField):
 			r = modelName(**kwargs)
 			r.save()
 
+#def singleListImporter(listOfEntries, modelName, modelField):
+
 def drinkImporter():
 	singleListImporter(drinkName, Drink_name,"drinkName")
 	singleListImporter(drinkType, Drink_type,"drinkType")
@@ -1569,7 +1571,14 @@ def personalityImporter():
 def appearanceImporter():
 	singleListImporter(appearance, Appearance, "Appearance")
 
-
+def drugsImporter():
+	singleListImporter(drugName, Drug_name, "drugName")
+	singleListImporter(drugType, Drug_type, "drugType")
+	singleListImporter(physicalAffect1, Physical_affect_1, "physAff")
+	singleListImporter(physicalAffect2, Physical_affect_2, "physAff")
+	singleListImporter(emotion, Emotion, "emotion")
+	singleListImporter(strength, Strength, "strength")
+	
 def humanoidTotal():
 	raceImporter()
 	nameImporter()

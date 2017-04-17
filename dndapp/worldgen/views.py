@@ -35,26 +35,22 @@ def index(request):
         selectedNpcs = returnFormSelection(GenOptionsNpcs(request.POST))      
         quantNpcs = GenOptionsNpcsQuant(request.POST)
         #will find if max value is exceded (umoung other things)
-        """
-        if seed.is_valid():
-            if seed['seed'].data:
-                newSeed= int(seed['seed'].data)
-            else:
-                newSeed = randint(0,9999)
-        """
+
         if quantNpcs.is_valid():
             quantNpcs = quantNpcs['npcQuant'].data
             characterList= genChar(selectedNpcs, int(quantNpcs), newSeed)
         else:
-            characterList= genChar(selectedNpcs, 10, newSeed)
+            characterList= genChar(selectedNpcs, 9, newSeed)
        
-        buildingList = genBuilding()
-
     # Non-POST form submitted page:
     else:   
-        characterList= genChar(0,10)
-        buildingList = genBuilding()
-        drinksList = genDrinks()
+        characterList= genChar(0,9)
+
+    buildingList = genBuilding()
+    drinksList = genDrinks()
+
+    for i, building in enumerate(buildingList):
+        characterList[i]['job'] = building['type']
 
     genSeedForm = GenOptionsSeed(initial={'seed': newSeed})
     genBuildingsForm = GenOptionsBuildings()
@@ -65,6 +61,7 @@ def index(request):
     ## form variables
     'charList': characterList,
     'buildingList': buildingList,
+    'weapons': Item_weapon.objects.all(),
     ## forms
     'genSeedForm': genSeedForm,
     'genBuildingsForm': genBuildingsForm,
