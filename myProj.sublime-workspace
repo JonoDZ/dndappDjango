@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"inner",
+				"innerText"
+			],
+			[
 				"o",
 				"ownerId"
 			],
@@ -510,10 +514,6 @@
 			[
 				"border-top",
 				"border-top-left-radius"
-			],
-			[
-				"bor",
-				"border-top"
 			]
 		]
 	},
@@ -523,18 +523,9 @@
 			"file": "dndapp/worldgen/charGen.py",
 			"settings":
 			{
-				"buffer_size": 1668,
+				"buffer_size": 1664,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "dndapp/worldgen/views.py",
-			"settings":
-			{
-				"buffer_size": 2973,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
 			}
 		},
 		{
@@ -547,10 +538,19 @@
 			}
 		},
 		{
+			"file": "dndapp/worldgen/views.py",
+			"settings":
+			{
+				"buffer_size": 3013,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "dndapp/worldgen/templates/worldgen/index.html",
 			"settings":
 			{
-				"buffer_size": 5287,
+				"buffer_size": 6471,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -559,7 +559,16 @@
 			"file": "dndapp/worldgen/static/worldgen/js/main.js",
 			"settings":
 			{
-				"buffer_size": 1292,
+				"buffer_size": 2107,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "dndapp/worldgen/static/worldgen/css/main.css",
+			"settings":
+			{
+				"buffer_size": 2302,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -568,7 +577,7 @@
 			"file": "dndapp/worldgen/templates/worldgen/modal.html",
 			"settings":
 			{
-				"buffer_size": 3507,
+				"buffer_size": 4697,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -580,33 +589,6 @@
 				"buffer_size": 3371,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "dndapp/worldgen/forms.py",
-			"settings":
-			{
-				"buffer_size": 2839,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": ".gitignore",
-			"settings":
-			{
-				"buffer_size": 654,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "dndapp/worldgen/didrugs.py",
-			"settings":
-			{
-				"buffer_size": 727,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
 			}
 		}
 	],
@@ -652,12 +634,18 @@
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/static",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/static/worldgen",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/static/worldgen/css",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/static/worldgen/js",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/static/worldgen/styles",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/templates",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/templates/worldgen"
 	],
 	"file_history":
 	[
+		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/static/worldgen/css/main.css",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/didrugs.py",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/.gitignore",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/forms.py",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/models.py",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/templates/worldgen/index.html",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/views.py",
@@ -668,7 +656,6 @@
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/diitems.py",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/dndapp/settings.py",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/static/worldgen/js/main.js",
-		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/forms.py",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/urls.py",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/charGen.py",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/polls/urls.py",
@@ -760,6 +747,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"drink",
+			"li",
+			"UL",
+			"ul",
+			"UL",
+			"ul",
+			"UL",
+			"ul",
 			"item",
 			"Building_type",
 			"Physical_affect_2",
@@ -879,15 +874,7 @@
 			"()",
 			"])",
 			"EFINE",
-			"]",
-			"[",
-			"names",
-			"main",
-			"192.168.1.68",
-			"192.168.1.20",
-			"192.168.1.13",
-			"192.168.1.68",
-			"192.168.1.212"
+			"]"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -916,15 +903,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1668,
+						"buffer_size": 1664,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								13,
-								13
+								547,
+								547
 							]
 						],
 						"settings":
@@ -933,44 +920,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 540.0,
+						"translation.y": 126.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "dndapp/worldgen/views.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2973,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1545,
-								1545
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 405.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "dndapp/worldgen/models.py",
 					"semi_transient": false,
 					"settings":
@@ -982,8 +939,8 @@
 						"selection":
 						[
 							[
-								4416,
-								4432
+								1440,
+								1440
 							]
 						],
 						"settings":
@@ -993,7 +950,37 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1530.0,
+						"translation.y": 798.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "dndapp/worldgen/views.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3013,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								410,
+								410
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
@@ -1005,15 +992,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5287,
+						"buffer_size": 6471,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4355,
-								4355
+								2266,
+								2266
 							]
 						],
 						"settings":
@@ -1022,7 +1009,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2123.0,
+						"translation.y": 1386.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -1031,7 +1018,7 @@
 			]
 		},
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -1040,15 +1027,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1292,
+						"buffer_size": 2107,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								504,
-								504
+								1052,
+								1052
 							]
 						],
 						"settings":
@@ -1058,27 +1045,55 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 177.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "dndapp/worldgen/templates/worldgen/modal.html",
+					"file": "dndapp/worldgen/static/worldgen/css/main.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3507,
+						"buffer_size": 2302,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1432,
-								1432
+								192,
+								192
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": -0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "dndapp/worldgen/templates/worldgen/modal.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4697,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								395,
+								395
 							]
 						],
 						"settings":
@@ -1087,14 +1102,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 383.0,
+						"translation.y": 84.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "dndapp/dndapp/settings.py",
 					"semi_transient": false,
 					"settings":
@@ -1106,8 +1121,8 @@
 						"selection":
 						[
 							[
-								840,
-								840
+								1041,
+								1041
 							]
 						],
 						"settings":
@@ -1117,95 +1132,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1092.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "dndapp/worldgen/forms.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2839,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2735,
-								2735
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 385.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": ".gitignore",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 654,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								244,
-								244
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "dndapp/worldgen/didrugs.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 727,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								661,
-								669
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 630.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
+					"stack_index": 7,
 					"type": "text"
 				}
 			]
@@ -1239,7 +1169,7 @@
 		"cols":
 		[
 			0.0,
-			0.5,
+			0.526165167621,
 			1.0
 		],
 		"rows":
@@ -1291,7 +1221,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},

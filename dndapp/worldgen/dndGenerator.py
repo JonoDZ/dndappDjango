@@ -30,7 +30,13 @@ def genBuilding(buildings=0):
 def genDrinks(seed=0):
 	if seed == 0:
 		seed = random.random()
-
 	drinkList =[]
 	drinkList = generateDrinks(seed)
 	return drinkList
+
+def genDrugs(seed=0):
+	if seed == 0:
+		seed = random.random()
+	drugList = []
+	drugList = generateDrugs(seed)
+	return drugList

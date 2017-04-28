@@ -13,3 +13,10 @@ def generateDrinks(seed):
 		drinksList.insert(0, drink)
 
 	return(drinksList)
+
+def generateDrugs(seed):
+	drug = {}
+	drugsList =[]
+	random.seed(seed)
+	drugNameList = Drug_name.objects.all()
+	for drugType in Drug_type.objects.all():

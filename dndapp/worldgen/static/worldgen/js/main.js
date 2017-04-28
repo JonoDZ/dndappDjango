@@ -6,24 +6,29 @@
     text.innerHTML = "<tr>" + ownerId.innerHTML + "</tr>"
  }
 
+ function searchBarWeaponModal(WeaponString) {
+  var testHeader = document.getElementById('testHeader');
+    testHeader.innerText = WeaponString.name + WeaponString.cost + WeaponString.dice + WeaponString.weight + WeaponString.properties ;
+ }
+
 function searchBox() {
     // Declare variables
-    var input, filter, ul, li, a, i;
+    var input, filter, tbody, li, a, i;
     input = document.getElementById('myInput');
     filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName('li');
+    tbody = document.getElementById("myTbody");
+    tr = tbody.getElementsByTagName('tr');
 
     // Loop through all list items, and hide those who don't match the search query
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
+    for (i = 0; i < tr.length; i++) {
+        if (tr[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
         } else {
-            li[i].style.display = "none";
+            tr[i].style.display = "none";
         }
     }
 }
+
  /////////////////
   // sidebar reload 
   //////////////////

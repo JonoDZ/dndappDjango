@@ -94,32 +94,32 @@ class Drink_type(models.Model):
 class Drug_name(models.Model):
     drugName = models.CharField(max_length=20)
     def __str__(self):
-        return self.drinkType
+        return self.drugName
 
 class Drug_type(models.Model):
     drugType = models.CharField(max_length=20)
     def __str__(self):
-        return self.drinkType
+        return self.drugType
 
 class Physical_affect_1(models.Model):
     physAff = models.CharField(max_length=50)
     def __str__(self):
-        return self.drinkType
+        return self.physAff
 
 class Physical_affect_2(models.Model):
     physAff = models.CharField(max_length=20)
     def __str__(self):
-        return self.drinkType
+        return self.physAff
 
 class Emotion(models.Model):
     emotion = models.CharField(max_length=20)
     def __str__(self):
-        return self.drinkType
+        return self.emotion
 
 class Strength(models.Model):
     strength = models.CharField(max_length=20)
     def __str__(self):
-        return self.drinkType
+        return self.strength
 
 ## ITEMS ##
 
