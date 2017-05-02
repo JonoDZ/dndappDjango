@@ -1,0 +1,18 @@
+<h2> {{user}} </h2>
+<h2> {{ user.prouser.seeds }} </h2>
+
+<form method="post" action="/test/">
+{% csrf_token %}
+
+<div>
+  <td>seed</td>
+</div>
+<div>
+  <td>{{ form.password.label_tag }}</td>
+  <td>{{ form.password }}</td>
+</div>
+
+<div>
+  <input type="submit" value="login" />
+</div>
+</form>

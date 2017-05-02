@@ -1,14 +1,14 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect, HttpResponse
+from django.contrib.auth import authenticate, login
 from .models import *
 from .forms import *
 import random
 from worldgen.dndGenerator import *
 # Create your views here.
 # import pdb; pdb.set_trace()
-items = [
-
-]
+items = []
+newSeed = random.random()
 
 def returnFormSelection(uncleanedDjangoForm):
     #check if the form is valid
@@ -24,7 +24,10 @@ def returnFormSelection(uncleanedDjangoForm):
     else:
         return "form isnt valid"
 
-newSeed = random.random()
+def test(request):
+
+    context ={}
+    return render(request, 'worldgen/test.html', context)
 
 def index(request):
     newSeed = random.random()
@@ -48,6 +51,7 @@ def index(request):
 
     buildingList = genBuilding()
     drinksList = genDrinks()
+    drugList= genDrugs()
 
     for i, building in enumerate(buildingList):
         characterList[i]['job'] = building['type']
@@ -72,9 +76,6 @@ def index(request):
     }
 
     return render(request, 'worldgen/index.html', context)
-
-def shop(request):
-    return HttpResponse("Here is the shop")
 
 def get_name(request):
     # if this is a POST request we need to process the form data
