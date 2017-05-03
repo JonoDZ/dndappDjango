@@ -1,0 +1,36 @@
+<div class="col-sm-5 col-md-4 col-lg-3">
+	<div id="searchBar" class="panel panel-primary">
+		<div class="panel-heading"> <h3 data-toggle="collapse" href="#collapse-search">Search</h3></div>
+		<div id="collapse-search" class="panel-collapse collapse">
+			<input type="text" id="myInput" onkeyup="searchBox()" placeholder="Search for names..">
+			<div  class="pre-scrollable">
+			{# WEAPONS TABLE #}
+			<table class="table table-striped table-condensed table-hover">
+				<thead>
+				 	<tr>
+			            <th>header</th>
+			        
+			    	</tr>
+			    </thead>
+			    <tbody id="myTbody">
+			    {% for weapon in weapons %}
+					<tr data-toggle="modal" data-target="#search-box-weapons" onclick="searchBarWeaponModal({ 
+						'name':'{{weapon.name}}',
+						'cost': '{{weapon.costCopper}}C {{weapon.costSilver}}S {{weapon.costGold}}G',
+						'dice':'{{weapon.damageDieQuant}}d{{weapon.damageDieType}} {{weapon.damageType}}',
+						'weight': '{{weapon.weight}}',
+						'properties': 
+						[{% for weaponProperty in weapon.weaponProperties.all %}
+	          			'{{weaponProperty}}', 
+	          		 	{% endfor %}]
+	          		})">
+					<td> {{weapon.name}}</td>
+					<td>{{weapon.costCopper}}C {{weapon.costSilver}}S {{weapon.costGold}}G</td>
+					</tr>
+				{% endfor %}
+				</tbody>
+			</table>
+			</div>	
+		</div>
+	</div>
+</div>

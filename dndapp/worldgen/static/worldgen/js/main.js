@@ -6,10 +6,20 @@
     text.innerHTML = "<tr>" + ownerId.innerHTML + "</tr>"
  }
 
- function searchBarWeaponModal(WeaponString) {
-  var testHeader = document.getElementById('testHeader');
-    testHeader.innerText = WeaponString.name + WeaponString.cost + WeaponString.dice + WeaponString.weight + WeaponString.properties ;
+ function generateDrugModal(itemArray) {
+  var modalHeader = document.getElementById('genericModalTheadTr');
+  var modalBody = document.getElementById('genericModalTbodyTr');
+
+  modalHeader.innerHTML = ''
+  modalBody.innerHTML = ''
+
+  for (thing in itemArray) {modalHeader.innerHTML += "<td>" + thing +"</td>";}
+  
+  for (thing in itemArray) {
+    modalBody.innerHTML += "<td>" + itemArray[thing] +"</td>";
+  }
  }
+
 
 function searchBox() {
     // Declare variables
