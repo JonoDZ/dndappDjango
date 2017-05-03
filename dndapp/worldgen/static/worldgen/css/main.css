@@ -11,22 +11,8 @@
 	margin: 0px;
 }
 
-
-
-#sidebar {
-	float: left;
-	width: 225px;
-}
-#sidebar label {
-	margin-bottom: 100px;
-}
-#sidebar h4 {
-	float: left;
-	line-height: 10px;
-}
-
-.sidebar-3 {
-	width: 65px;
+#collapse-config {
+	padding: 10px;
 }
 
 #rerollBtn {
@@ -51,9 +37,10 @@
 	margin-bottom: 5px;
 }
 
-.panel h3{
+.panel-heading h3{
 	margin: 0;
 }
+
 #citySizeText {
 	border-radius: 5px;
 	border-color: #ccc;
@@ -65,7 +52,6 @@
 	float: right;
 	height: 35px;
 	padding-top: 2px;
-
 }
 
 #citySize {

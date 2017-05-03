@@ -66,13 +66,13 @@ def index(request):
     'charList': characterList,
     'buildingList': buildingList,
     'weapons': Item_weapon.objects.all(),
+    'drugList':drugList,
+    'drinkNames' : drinksList,
     ## forms
     'genSeedForm': genSeedForm,
     'genBuildingsForm': genBuildingsForm,
     'genNpcsForm': genNpcsForm,
-    'genNpcsQuantForm': genNpcsQuantForm,
-    ##building details
-    'drinkNames' : drinksList
+    'genNpcsQuantForm': genNpcsQuantForm   
     }
 
     return render(request, 'worldgen/index.html', context)

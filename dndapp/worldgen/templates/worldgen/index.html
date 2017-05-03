@@ -26,10 +26,8 @@
 <body>
 	{# HEADER #}
 
-		
 	<div id="mainHeader" class="container text-center">
-	  	<h1>Reroll That City! <small id="versionNum">v0.3.5</small></h1>
-	  
+	  	<h1>Reroll That City! <small id="versionNum">v0.4</small></h1>  
 	</div>
 	{# END HEADER #}
 	
@@ -45,64 +43,69 @@
 		</div>
 	</div>
 
-	{# START OF SIDE BAR #}
-	<div id="sidebar" class="well well-sm">
-		
-		<div id="saveLoadRest">
-			<button type="button" id="saveBtn" class="btn btn-primary btn sidebar-3">Save</button>	
-			<button type="button" id="loadBtn" class="btn btn-primary btn sidebar-3">Load</button>	
-			<button type="button" id="resetBtn" class="btn btn-primary btn sidebar-3">Reset</button>	
-		</div>
-
-		{# CITY OPTIONS #}
-		<div id="cityToGen">
-			<h3>City</h3>
-			<div class="dropdown" id="citySize" >
-			  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">City Size
-			  <span class="caret"></span></button>
-			  <ul class="dropdown-menu">
-			    <li><a href="#">Hamlet</a></li>
-			    <li><a href="#">Village</a></li>
-			    <li><a href="#">Town</a></li>
-			    <li><a href="#">City</a></li>
-			  </ul>
-			</div>
-			<div id="citySizeText">	
-			Village
-			</div>
-		</div>
-		{# END CITY OPTIONS #}
-
-		{# OTHER OPTIONS #}
-		<form action="/world/" method="post" novalidate>
-			{% csrf_token %}
-			{{ genSeedForm }}
-			
-			<div id="buildingsToGen">			
-				<h3> Buildings </h3>
-				<div>
-					{{ genBuildingsForm }}
-				</div>	
-			</div>
-
-			<div id="npcsToGen">
-				<h3>NPC's</h3>
-				<div id="npcQuantInput">					
-					<h4>NPCs to Gen: </h4>
-					{{ genNpcsQuantForm }}
+	{# START OF CONFIG #}
+	<div class="col-xs-12">
+		<div class="panel panel-primary">
+			<div class="panel-heading"> <h3 data-toggle="collapse" href="#collapse-config">City Config</h3></div>
+			<div id="collapse-config" class="panel-collapse collapse">
+				<div id="saveLoadRest">
+					<button type="button" id="saveBtn" class="btn btn-primary btn sidebar-3">Save</button>	
+					<button type="button" id="loadBtn" class="btn btn-primary btn sidebar-3">Load</button>	
+					<button type="button" id="resetBtn" class="btn btn-primary btn sidebar-3">Reset</button>	
 				</div>
-				{{ genNpcsForm }}
+
+				{# CITY OPTIONS #}
+				<div id="cityToGen">
+					<h3>City</h3>
+					<div class="dropdown" id="citySize" >
+					  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">City Size
+					  <span class="caret"></span></button>
+					  <ul class="dropdown-menu">
+					    <li><a href="#">Hamlet</a></li>
+					    <li><a href="#">Village</a></li>
+					    <li><a href="#">Town</a></li>
+					    <li><a href="#">City</a></li>
+					  </ul>
+					</div>
+					<div id="citySizeText">	
+					Village
+					</div>
+				</div>
+				{# END CITY OPTIONS #}
+
+				{# OTHER OPTIONS #}
+				<form action="/world/" method="post" novalidate>
+					{% csrf_token %}
+					{{ genSeedForm }}
+					
+					<div id="buildingsToGen">			
+						<h3> Buildings </h3>
+						<div>
+							{{ genBuildingsForm }}
+						</div>	
+					</div>
+
+					<div id="npcsToGen">
+						<h3>NPC's</h3>
+						<div id="npcQuantInput">					
+							<h4>NPCs to Gen: </h4>
+							{{ genNpcsQuantForm }}
+						</div>
+						{{ genNpcsForm }}
+					</div>
+
+					<button type="submit"  id="rerollAll" class="btn btn-primary btn-lg">Reroll that City!</button>	
+				</form>		
+
 			</div>
+		</div>
+	</div>
+	{# END OF CONFIG #}
 
-			<button type="submit"  id="rerollAll" class="btn btn-primary btn-lg">Reroll that City!</button>	
-		</form>		
-	</div> 
-	{# END OF SIDEBAR #}
-
-	{# START OF MAIN PAGE #}
+{# START OF MAIN PAGE #}
 
 	{# NPC BOX #}
-	<div class="col-md-6 col-lg-5">
+	<div class="col-md-7 col-lg-5">
 		<div id="npcTable" class="panel panel-primary">
 			<div class="panel-heading"> <h3 data-toggle="collapse" href="#collapse-npc"> NPCs </h3></div>
 			<div id="collapse-npc" class="panel-collapse collapse pre-scrollable">
@@ -134,7 +137,7 @@
 	{# END NPC BOX #}
 
 	{# BUILDING BOX #}
-	<div class="col-md-5 col-lg-3">
+	<div class="col-md-5 col-lg-4">
 		<div id="buildingsTable" class="panel panel-primary">
 			<div class="panel-heading"> <h3 data-toggle="collapse" href="#collapse-building">Buildings</h3></div>
 			<div id="collapse-building" class="panel-collapse collapse">
@@ -177,7 +180,7 @@
 				    </thead>
 				    <tbody id="myTbody">
 				    {% for weapon in weapons %}
-						<tr data-toggle="modal" data-target="#search-box-weapons" onclick="searchBarWeaponModal({ 
+						<tr data-toggle="modal" data-target="#search-box-weapons" onclick="generateDrugModal({ 
 							'name':'{{weapon.name}}',
 							'cost': '{{weapon.costCopper}}C {{weapon.costSilver}}S {{weapon.costGold}}G',
 							'dice':'{{weapon.damageDieQuant}}d{{weapon.damageDieType}} {{weapon.damageType}}',
@@ -199,12 +202,48 @@
 	</div>
 	{# END SEARCH BOX #}
 
+	<div class="col-sm-5 col-md-4 col-lg-3">
+
+		<div id="drugTable" class="panel panel-primary">
+			<div class="panel-heading"> <h3 data-toggle="collapse" href="#collapse-drug">Drugs</h3></div>
+			<div id="collapse-drug" class="panel-collapse collapse">
+				<div  class="pre-scrollable">
+				{# WEAPONS TABLE #}
+				<table class="table table-striped table-condensed table-hover">
+					<thead>
+					 	<tr>
+				            <th>Name</th>
+				        	<th>type</th>
+				    	</tr>
+				    </thead>
+
+				    <tbody>
+				    {% for drug in drugList %}
+						<tr data-toggle="modal" data-target="#search-box-weapons" onclick="generateDrugModal({ 
+							'type':'{{drug.type}}',
+							'name':'{{drug.name}}',
+							'physAff1':'{{drug.physAff1}}',
+							'physAff2':'{{drug.physAff2}}',
+							'emotion':'{{drug.emotion}}',
+							'strength':'{{drug.strength}}'
+		          		})">
+						<td>{{drug.name}}</td>
+						<td>{{drug.type}}</td>
+						</tr>
+					{% endfor %}
+					</tbody>
+				</table>
+				</div>	
+			</div>
+		</div>
+	</div>
+
 
 	{# MODAL DECLARATION #}
-	{% include "worldgen/modal.html" %}
+		{% include "worldgen/modal.html" %}
 	{# END MODAL DECLARATION #}
 
-<script type=text/javascript src="{% static 'worldgen/js/granim.min.js' %}"></script>
+	<script type=text/javascript src="{% static 'worldgen/js/granim.min.js' %}"></script>
 	<script type=text/javascript src="{% static 'worldgen/js/main.js' %}"></script>
 
 {# END OF MAIN PAGE #}	

@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"coll",
+				"collapse"
+			],
+			[
+				"panel",
+				"panel-collapse"
+			],
+			[
+				"collape",
+				"collapse-search"
+			],
+			[
 				"dr",
 				"drugsList"
 			],
@@ -502,28 +514,44 @@
 			[
 				"magin",
 				"margin-top"
-			],
-			[
-				"delete",
-				"deleteButton"
-			],
-			[
-				"list",
-				"listItem"
-			],
-			[
-				"sty",
-				"list-style"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "dndapp/worldgen/charGen.py",
+			"file": "dndapp/worldgen/views.py",
 			"settings":
 			{
-				"buffer_size": 1664,
+				"buffer_size": 3118,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "dndapp/worldgen/urls.py",
+			"settings":
+			{
+				"buffer_size": 219,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "dndapp/worldgen/templates/worldgen/test.html",
+			"settings":
+			{
+				"buffer_size": 287,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "test.html"
+			}
+		},
+		{
+			"file": "dndapp/worldgen/templates/worldgen/index.html",
+			"settings":
+			{
+				"buffer_size": 6915,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -532,79 +560,7 @@
 			"file": "dndapp/worldgen/models.py",
 			"settings":
 			{
-				"buffer_size": 4517,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "dndapp/worldgen/views.py",
-			"settings":
-			{
-				"buffer_size": 3038,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "dndapp/worldgen/dndGenerator.py",
-			"settings":
-			{
-				"buffer_size": 1004,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "dndapp/worldgen/templates/worldgen/index.html",
-			"settings":
-			{
-				"buffer_size": 6536,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "dndapp/worldgen/generators.py",
-			"settings":
-			{
-				"buffer_size": 867,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "dndapp/worldgen/static/worldgen/js/main.js",
-			"settings":
-			{
-				"buffer_size": 2107,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "dndapp/worldgen/static/worldgen/css/main.css",
-			"settings":
-			{
-				"buffer_size": 2302,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "dndapp/worldgen/templates/worldgen/modal.html",
-			"settings":
-			{
-				"buffer_size": 4697,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "dndapp/dndapp/settings.py",
-			"settings":
-			{
-				"buffer_size": 3371,
+				"buffer_size": 4755,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -650,33 +606,32 @@
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/dndapp",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen",
-		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/static",
-		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/static/worldgen",
-		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/static/worldgen/css",
-		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/static/worldgen/js",
-		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/static/worldgen/styles",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/templates",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/templates/worldgen"
 	],
 	"file_history":
 	[
+		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/dndapp/settings.py",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/dndapp/urls.py",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/templates/registration/login.html",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/polls/urls.py",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/templates/registration/logged_out.html",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/generators.py",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/static/worldgen/js/main.js",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/static/worldgen/css/main.css",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/templates/worldgen/modal.html",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/templates/worldgen/index.html",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/charGen.py",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/models.py",
+		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/dndGenerator.py",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/didrugs.py",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/.gitignore",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/forms.py",
-		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/models.py",
-		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/templates/worldgen/index.html",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/views.py",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/templates/worldgen/names.html",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/dataimporter.py",
-		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/generators.py",
-		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/dndGenerator.py",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/diitems.py",
-		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/dndapp/settings.py",
-		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/static/worldgen/js/main.js",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/urls.py",
-		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/charGen.py",
-		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/polls/urls.py",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/templates/worldgen/indexBackup.html",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/buildingGen.py",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/migrations/0001_initial.py",
@@ -686,7 +641,6 @@
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/worldgen/apps.py",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/polls/models.py",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/polls/views.py",
-		"/C/Users/jzac9_000/Documents/work/Casual/dndappDjango/dndapp/dndapp/urls.py",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndApp/dndGenerator.py",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndApp/.gitignore",
 		"/C/Users/jzac9_000/Documents/work/Casual/dndApp/static/css/main.css",
@@ -750,7 +704,7 @@
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 26.0
 	},
 	"find_in_files":
 	{
@@ -765,6 +719,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"pre",
+			"data",
+			"LOGIN_RE",
+			"login",
 			"drink",
 			"li",
 			"UL",
@@ -888,11 +846,7 @@
 			"=[]\n",
 			"name",
 			"for",
-			"generateRace",
-			"()",
-			"])",
-			"EFINE",
-			"]"
+			"generateRace"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -912,53 +866,24 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "dndapp/worldgen/charGen.py",
+					"file": "dndapp/worldgen/views.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1664,
+						"buffer_size": 3118,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								547,
-								547
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 210.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "dndapp/worldgen/models.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4517,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3063,
-								3071
+								762,
+								762
 							]
 						],
 						"settings":
@@ -968,37 +893,64 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 966.0,
+						"translation.y": 168.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "dndapp/worldgen/views.py",
+					"buffer": 1,
+					"file": "dndapp/worldgen/urls.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3038,
+						"buffer_size": 219,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1630,
-								1630
+								214,
+								214
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Python/Python.sublime-syntax"
 						},
-						"translation.x": -0.0,
-						"translation.y": 826.0,
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "dndapp/worldgen/templates/worldgen/test.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 287,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								287,
+								287
+							]
+						],
+						"settings":
+						{
+							"auto_name": "test.html",
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -1006,199 +958,48 @@
 				},
 				{
 					"buffer": 3,
-					"file": "dndapp/worldgen/dndGenerator.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1004,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								747,
-								747
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 84.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
 					"file": "dndapp/worldgen/templates/worldgen/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6536,
+						"buffer_size": 6915,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3468,
-								3468
+								5465,
+								5465
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Jinja2/Syntaxes/HTML (Jinja2).tmLanguage",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1582.0,
+						"translation.y": 1876.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 5,
-					"file": "dndapp/worldgen/generators.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 867,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								867,
-								867
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 42.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "dndapp/worldgen/static/worldgen/js/main.js",
+					"buffer": 4,
+					"file": "dndapp/worldgen/models.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2107,
+						"buffer_size": 4755,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1052,
-								1052
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 177.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "dndapp/worldgen/static/worldgen/css/main.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2302,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								192,
-								192
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "dndapp/worldgen/templates/worldgen/modal.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4697,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								395,
-								395
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jinja2/Syntaxes/HTML (Jinja2).tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 84.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "dndapp/dndapp/settings.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3371,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1041,
-								1041
+								971,
+								971
 							]
 						],
 						"settings":
@@ -1208,10 +1009,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1092.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -1219,7 +1020,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 26.0
 	},
 	"input":
 	{
@@ -1234,18 +1035,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.526165167621,
 			1.0
 		],
 		"rows":
@@ -1263,7 +1057,7 @@
 	"project": "myProj.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 48.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1301,11 +1095,11 @@
 	"settings":
 	{
 	},
-	"show_minimap": true,
+	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 186.0,
+	"side_bar_width": 147.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
