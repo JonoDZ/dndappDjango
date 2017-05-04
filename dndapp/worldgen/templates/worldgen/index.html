@@ -33,7 +33,7 @@
 	
 	<div id="topSegment" class="well col-xs-12">
 		<div id="weather" class="col-xs-4 text-center">
-			<h4> Todays Weather: Windy!</h4>				
+			<h4> Todays Weather: Windy!</h4> 				
 		</div>
 		<div id="populationContainer" class="col-xs-4 text-center">
 			<h4> Population: <span id="population"> 150</span> </h4>
@@ -45,8 +45,8 @@
 
 	{# START OF CONFIG #}
 	<div class="col-xs-12">
-		<div class="panel panel-primary">
-			<div class="panel-heading"> <h3 data-toggle="collapse" href="#collapse-config">City Config</h3></div>
+		<div class="panel panel-primary"  data-toggle="collapse" href="#collapse-config">
+			<div class="panel-heading"> <h3>City Config</h3><img style="float:right" src="{% static 'worldgen/images/dArrow.png' %}"></div>
 			<div id="collapse-config" class="panel-collapse collapse">
 				<div id="saveLoadRest">
 					<button type="button" id="saveBtn" class="btn btn-primary btn sidebar-3">Save</button>	
@@ -106,8 +106,11 @@
 
 	{# NPC BOX #}
 	<div class="col-xs-12 col-md-7 col-lg-5">
-		<div id="npcTable" class="panel panel-primary">
-			<div class="panel-heading"> <h3 data-toggle="collapse" href="#collapse-npc"> NPCs </h3></div>
+		<div id="npcTable" class="panel panel-primary" data-toggle="collapse" href="#collapse-npc">
+			<div class="panel-heading"> 
+				<h3> NPCs </h3>
+				<img style="float:right" src="{% static 'worldgen/images/dArrow.png' %}">
+			</div>
 			<div id="collapse-npc" class="panel-collapse collapse pre-scrollable">
 				<table class="table table-striped table-condensed table-hover">
 					<thead>
@@ -138,8 +141,11 @@
 
 	{# BUILDING BOX #}
 	<div class="col-xs-12 col-md-5 col-lg-4">
-		<div id="buildingsTable" class="panel panel-primary">
-			<div class="panel-heading"> <h3 data-toggle="collapse" href="#collapse-building">Buildings</h3></div>
+		<div id="buildingsTable" class="panel panel-primary" data-toggle="collapse" href="#collapse-building">
+			<div class="panel-heading"> 
+				<h3>Buildings</h3>
+				<img style="float:right" src="{% static 'worldgen/images/dArrow.png' %}">
+			</div>
 			<div id="collapse-building" class="panel-collapse collapse">
 				<table class="table table-striped table-condensed table-hover">
 					<thead>
@@ -165,8 +171,11 @@
 
 	{# SEARCH BOX #}
 	<div class="col-xs-12 col-sm-5 col-md-4 col-lg-3">
-		<div id="searchBar" class="panel panel-primary">
-			<div class="panel-heading"> <h3 data-toggle="collapse" href="#collapse-search">Search</h3></div>
+		<div id="searchBar" class="panel panel-primary" data-toggle="collapse" href="#collapse-search">
+			<div class="panel-heading"> 
+				<h3>Search</h3>
+				<img style="float:right" src="{% static 'worldgen/images/dArrow.png' %}">
+			</div>
 			<div id="collapse-search" class="panel-collapse collapse">
 				<input type="text" id="myInput" onkeyup="searchBox()" placeholder="Search for names..">
 				<div  class="pre-scrollable">
@@ -202,10 +211,14 @@
 	</div>
 	{# END SEARCH BOX #}
 
+	{# DRUG BOX #}
 	<div class="col-xs-12 col-sm-5 col-md-4 col-lg-3">
 
-		<div id="drugTable" class="panel panel-primary">
-			<div class="panel-heading"> <h3 data-toggle="collapse" href="#collapse-drug">Drugs</h3></div>
+		<div id="drugTable" class="panel panel-primary" data-toggle="collapse" href="#collapse-drug">
+			<div class="panel-heading"> 
+				<h3>Drugs</h3>
+				<img style="float:right" src="{% static 'worldgen/images/dArrow.png' %}">
+			</div>
 			<div id="collapse-drug" class="panel-collapse collapse">
 				<div  class="pre-scrollable">
 				{# WEAPONS TABLE #}
@@ -219,7 +232,7 @@
 
 				    <tbody>
 				    {% for drug in drugList %}
-						<tr data-toggle="modal" data-target="#search-box-weapons" onclick="generateDrugModal({ 
+						<tr data-toggle="modal" data-target="#DRUG-box-weapons" onclick="generateDrugModal({ 
 							'type':'{{drug.type}}',
 							'name':'{{drug.name}}',
 							'physAff1':'{{drug.physAff1}}',
@@ -237,6 +250,27 @@
 			</div>
 		</div>
 	</div>
+	{# END DRUG BOX #}
+
+	{# DRUG BOX #}
+	<div class="col-xs-12 col-sm-5 col-md-4 col-lg-3">
+
+		<div id="diceBox" class="panel panel-primary" data-toggle="collapse" href="#collapse-dice">
+			<div class="panel-heading"> 
+				<h3>Dice</h3>
+				<img style="float:right" src="{% static 'worldgen/images/dArrow.png' %}">
+			</div>
+			<div id="collapse-dice" class="panel-collapse collapse">
+				<div  class="pre-scrollable">
+					<div>
+						
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+	{# END DRUG BOX #}
+
 
 
 	{# MODAL DECLARATION #}
