@@ -45,8 +45,8 @@
 
 	{# START OF CONFIG #}
 	<div class="col-xs-12">
-		<div class="panel panel-primary"  data-toggle="collapse" href="#collapse-config">
-			<div class="panel-heading"> <h3>City Config</h3><img style="float:right" src="{% static 'worldgen/images/dArrow.png' %}"></div>
+		<div class="panel panel-primary" >
+			<div class="panel-heading" data-toggle="collapse" href="#collapse-config"> <h3>City Config</h3><img style="float:right" src="{% static 'worldgen/images/dArrow.png' %}"></div>
 			<div id="collapse-config" class="panel-collapse collapse">
 				<div id="saveLoadRest">
 					<button type="button" id="saveBtn" class="btn btn-primary btn sidebar-3">Save</button>	
@@ -106,8 +106,8 @@
 
 	{# NPC BOX #}
 	<div class="col-xs-12 col-md-7 col-lg-5">
-		<div id="npcTable" class="panel panel-primary" data-toggle="collapse" href="#collapse-npc">
-			<div class="panel-heading"> 
+		<div id="npcTable" class="panel panel-primary">
+			<div class="panel-heading" data-toggle="collapse" href="#collapse-npc"> 
 				<h3> NPCs </h3>
 				<img style="float:right" src="{% static 'worldgen/images/dArrow.png' %}">
 			</div>
@@ -141,8 +141,8 @@
 
 	{# BUILDING BOX #}
 	<div class="col-xs-12 col-md-5 col-lg-4">
-		<div id="buildingsTable" class="panel panel-primary" data-toggle="collapse" href="#collapse-building">
-			<div class="panel-heading"> 
+		<div id="buildingsTable" class="panel panel-primary">
+			<div class="panel-heading" data-toggle="collapse" href="#collapse-building"> 
 				<h3>Buildings</h3>
 				<img style="float:right" src="{% static 'worldgen/images/dArrow.png' %}">
 			</div>
@@ -171,8 +171,8 @@
 
 	{# SEARCH BOX #}
 	<div class="col-xs-12 col-sm-5 col-md-4 col-lg-3">
-		<div id="searchBar" class="panel panel-primary" data-toggle="collapse" href="#collapse-search">
-			<div class="panel-heading"> 
+		<div id="searchBar" class="panel panel-primary">
+			<div class="panel-heading" data-toggle="collapse" href="#collapse-search"> 
 				<h3>Search</h3>
 				<img style="float:right" src="{% static 'worldgen/images/dArrow.png' %}">
 			</div>
@@ -214,8 +214,8 @@
 	{# DRUG BOX #}
 	<div class="col-xs-12 col-sm-5 col-md-4 col-lg-3">
 
-		<div id="drugTable" class="panel panel-primary" data-toggle="collapse" href="#collapse-drug">
-			<div class="panel-heading"> 
+		<div id="drugTable" class="panel panel-primary">
+			<div class="panel-heading" data-toggle="collapse" href="#collapse-drug"> 
 				<h3>Drugs</h3>
 				<img style="float:right" src="{% static 'worldgen/images/dArrow.png' %}">
 			</div>
@@ -252,24 +252,26 @@
 	</div>
 	{# END DRUG BOX #}
 
-	{# DRUG BOX #}
+	{# DICE BOX #}
 	<div class="col-xs-12 col-sm-5 col-md-4 col-lg-3">
 
-		<div id="diceBox" class="panel panel-primary" data-toggle="collapse" href="#collapse-dice">
-			<div class="panel-heading"> 
+		<div id="dicePanel" class="panel panel-primary">
+			<div class="panel-heading" data-toggle="collapse" href="#collapse-dice"> 
 				<h3>Dice</h3>
 				<img style="float:right" src="{% static 'worldgen/images/dArrow.png' %}">
 			</div>
 			<div id="collapse-dice" class="panel-collapse collapse">
 				<div  class="pre-scrollable">
-					<div>
-						
+					<div id="diceBox">
+						Dice comimg soon!
 					</div>
+					<div onclick="addDice(6)">CHANGE</div>
+					
 				</div>	
 			</div>
 		</div>
 	</div>
-	{# END DRUG BOX #}
+	{# END DICE BOX #}
 
 
 

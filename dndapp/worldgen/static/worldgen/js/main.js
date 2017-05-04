@@ -40,8 +40,14 @@ function searchBox() {
 }
 
 
-function dice(d) {
+function addDice(d) {
+  var diceBox = $('#diceBox');
+  diceBox[0].innerText = dice(d);
+}
 
+function dice(d) {
+  var randomNumber = Math.floor(Math.random()* d) + 1;
+  return randomNumber
 }
  /////////////////
   // sidebar reload 
