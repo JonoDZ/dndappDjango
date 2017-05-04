@@ -39,6 +39,10 @@ function searchBox() {
     }
 }
 
+
+function dice(d) {
+
+}
  /////////////////
   // sidebar reload 
   //////////////////
