@@ -63,6 +63,20 @@
 	color:#fff;
 }
 
+.panel-heading img {
+  width: 26px;
+  height: 26px;
+  float: right;
+}
+
+.panel-heading h3 {
+  position: relative;
+  float: left;
+}
+.panel-heading {
+	height: 47px;
+}
+
 #myInput {
     background-image: url('/css/searchicon.png'); /* Add a search icon to input */
     background-position: 10px 12px; /* Position the search icon */
