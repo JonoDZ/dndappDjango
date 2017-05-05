@@ -39,31 +39,55 @@ function searchBox() {
     }
 }
 
-function addDice(d) {
-  var diceBox = $('#diceBox')[0];
-  if (d == 0) {
-    diceBox.innerHTML = '';
-  }
-  else {
-    diceBox.innerHTML += '<div name='+d+' class="die">'+dice(d) + '</div>';
-  }
+function makeDice(dieElem,d) {
+  var dieDiv = document.createElement("div");
+  dieDiv.className = 'die';
+  dieDiv.setAttribute("name", d);
+
+  var dieDivText = document.createTextNode(genDieNum(d));
+  var dieHeader = document.createElement("h5");
+  var dieHeaderText = document.createTextNode("D"+d);
+
+  dieHeader.appendChild(dieHeaderText);
+  dieDiv.appendChild(dieHeader)
+  dieDiv.appendChild(dieDivText)
+  dieElem.appendChild(dieDiv)
 }
 
-function dice(d) {
-  var randomNumber = Math.floor(Math.random()* d) + 1;
-  return randomNumber
+function addDice(d) {
+  var diceBox = $('#diceBox')[0];
+  if (d == 0) {diceBox.innerHTML = '';}
+  else {makeDice(diceBox,d);}
 }
 
 function rerollDice() {
   var diceBox = $('#diceBox')[0];
   var nodes = diceBox.childElementCount;
+
   for (i = 0; i < nodes; i++) {
     var diceDiv = diceBox.childNodes[i];
     var d = parseInt(diceDiv.getAttribute("name"));
-    diceBox.childNodes[i].innerText = dice(d);
-  }
 
+    while (diceDiv.hasChildNodes()) {
+      diceDiv.removeChild(diceDiv.lastChild);
+    }
+
+    var dieDivText = document.createTextNode(genDieNum(d));
+    var dieHeader = document.createElement("h5");
+    var dieHeaderText = document.createTextNode("D"+d);
+
+    dieHeader.appendChild(dieHeaderText);
+    diceDiv.appendChild(dieHeader)
+    diceDiv.appendChild(dieDivText)
+    
+  }
 }
+
+function genDieNum(d) {
+  var randomNumber = Math.floor(Math.random()* d) + 1;
+  return randomNumber
+}
+
 
  /////////////////
   // sidebar reload 
