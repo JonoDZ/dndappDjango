@@ -7,11 +7,10 @@ Desktop.ini
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
-
+*.pyc
 
 venv/
-dndapp/dndapp/__pycache__/
-
+**/__pycache__/
 # Windows Installer files
 *.cab
 *.msi
