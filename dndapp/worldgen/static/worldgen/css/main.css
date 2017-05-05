@@ -54,11 +54,15 @@
 	border:1px solid black;
 	text-align: center;
 	vertical-align: middle;
-	line-height: 50px; 
+	line-height: 20px; 
 	float: left;
 	margin: 3px; 
 }
-
+.die > h5 {
+	font-size: 15px;
+	line-height: 5px; 
+	margin-top: 7px;
+}
 #D4, #D6, #D8, #D10, #D12, #D20, #D100 {
 
 

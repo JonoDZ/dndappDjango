@@ -10,7 +10,7 @@ $RECYCLE.BIN/
 *.pyc
 
 venv/
-**/__pycache__/
+dndapp/dndapp/__pycache__/
 # Windows Installer files
 *.cab
 *.msi
@@ -48,3 +48,4 @@ venv/
 Network Trash Folder
 Temporary Items
 .apdisk
+*.pyc
