@@ -21,6 +21,7 @@ urlpatterns = [
     url(r'^login/$', auth_views.login, name='login'),
     url(r'^logout/$', auth_views.logout, name='logout'),
     url(r'^accounts/', include('django.contrib.auth.urls')),
-    url(r'^world/', include('worldgen.urls')),
-    url(r'^admin/', admin.site.urls),
+    #url(r'^world/', include('worldgen.urls')),
+    url(r'^', include('worldgen.urls')),
+    url(r'^admin35426576463/', admin.site.urls),
 ]
