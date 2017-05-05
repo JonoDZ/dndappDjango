@@ -253,7 +253,7 @@
 	{# END DRUG BOX #}
 
 	{# DICE BOX #}
-	<div class="col-xs-12 col-sm-5 col-md-4 col-lg-3">
+	<div class="col-xs-12 col-md-5 col-lg-4">
 
 		<div id="dicePanel" class="panel panel-primary">
 			<div class="panel-heading" data-toggle="collapse" href="#collapse-dice"> 
@@ -262,10 +262,21 @@
 			</div>
 			<div id="collapse-dice" class="panel-collapse collapse">
 				<div  class="pre-scrollable">
-					<div id="diceBox">
-						Dice comimg soon!
+
+					
+					<div id="diceSelectorDiv" class="col-sm-6">
+						<button id="D4" type="button" class="btn btn-primary" onclick="addDice(4)">D4</button>
+						<button id="D6" type="button" class="btn btn-primary" onclick="addDice(6)">D6</button>
+						<button id="D8" type="button" class="btn btn-primary" onclick="addDice(8)">D8</button>
+						<button id="D10" type="button" class="btn btn-primary" onclick="addDice(10)">D10</button>
+						<button id="D12" type="button" class="btn btn-primary" onclick="addDice(12)">D12</button>
+						<button id="D20" type="button" class="btn btn-primary" onclick="addDice(20)">D20</button>
+						<button id="D100" type="button" class="btn btn-primary" onclick="addDice(0)">CLEAR</button>
+						<button id="D100" type="button" class="btn btn-primary" onclick="rerollDice()">REROLL</button>
 					</div>
-					<div onclick="addDice(6)">CHANGE</div>
+										<div id="diceBoxWrapper">
+						<div id="diceBox"></div>
+					</div>
 					
 				</div>	
 			</div>

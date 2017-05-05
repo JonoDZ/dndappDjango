@@ -39,16 +39,32 @@ function searchBox() {
     }
 }
 
-
 function addDice(d) {
-  var diceBox = $('#diceBox');
-  diceBox[0].innerText = dice(d);
+  var diceBox = $('#diceBox')[0];
+  if (d == 0) {
+    diceBox.innerHTML = '';
+  }
+  else {
+    diceBox.innerHTML += '<div name='+d+' class="die">'+dice(d) + '</div>';
+  }
 }
 
 function dice(d) {
   var randomNumber = Math.floor(Math.random()* d) + 1;
   return randomNumber
 }
+
+function rerollDice() {
+  var diceBox = $('#diceBox')[0];
+  var nodes = diceBox.childElementCount;
+  for (i = 0; i < nodes; i++) {
+    var diceDiv = diceBox.childNodes[i];
+    var d = parseInt(diceDiv.getAttribute("name"));
+    diceBox.childNodes[i].innerText = dice(d);
+  }
+
+}
+
  /////////////////
   // sidebar reload 
   //////////////////
