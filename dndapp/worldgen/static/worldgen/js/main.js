@@ -1,25 +1,45 @@
 /// other stuff
 function modalOwnerSet(modalId, ownerId)
 {
-  var text = $(modalId).find('#modal-owner')[0];
+  var columns = 4
+  var owner = ownerId.innerHTML;
+  var modalOwner = $(modalId).find('#modal-owner')[0];
+  //remove all previous nodes (clears any previous data assigned)
+  while (modalOwner.hasChildNodes()) {
+    modalOwner.removeChild(modalOwner.lastChild);
+  }
   //text.innerText = ownerId.children.firstName.innerText;
-  var Table = document.createElement("table");
-  var TableHead = document.createElement("thead");
-  var TableRow = document.createElement("tr");
-  var TableRowHeader = document.createElement("th");
-  var TableRowHeaderTxt = document.createTextNode(string);
+  var table = document.createElement("table");
+  //define table head sections
+  var tableHead = document.createElement("thead");
+  var tableHeadRow = document.createElement("tr");
 
-  var dieDivText = document.createTextNode(genDieNum(d));
-  var dieHeader = document.createElement("h5");
-  var dieHeaderText = document.createTextNode("D"+d);
-
-  dieHeader.appendChild(dieHeaderText);
-  dieDiv.appendChild(dieHeader);
-  dieDiv.appendChild(dieDivText);  
-
-
-  text.innerHTML = "<tr>" + ownerId.innerHTML + "</tr>"
+  //define table body sections
+  var tableBody = document.createElement("tbody");
+  var tableBodyRow = document.createElement("tr");
+  
+  //create table entries
+  for (i = 0; i < columns; i++) {
+    var tableBodyRowHeader = document.createElement("th");
+    var tableHeadRowHeader = document.createElement("th");
+    tableHeadRowHeader.appendChild(document.createTextNode(i));
+    tableBodyRowHeader.appendChild(document.createTextNode(i));
+    tableHeadRow.appendChild(tableHeadRowHeader);
+    tableBodyRow.appendChild(tableBodyRowHeader);
+  }
+  //construct table head
+  tableHeadRow.appendChild(tableHeadRowHeader);
+  tableHead.appendChild(tableHeadRow);
+  //construct table Body
+  tableBodyRow.appendChild(tableBodyRowHeader);
+  tableBody.appendChild(tableBodyRow);
+  //add all to table and set to modal
+  table.appendChild(tableHead);
+  table.appendChild(tableBody);
+  modalOwner.appendChild(table);
+  table.setAttribute('class', "table table-striped table-condensed");
 }
+
 
 function generateDrugModal(itemArray) {
   var modalHeader = document.getElementById('genericModalTheadTr');
