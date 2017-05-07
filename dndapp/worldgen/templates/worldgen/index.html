@@ -74,7 +74,7 @@
 				{# END CITY OPTIONS #}
 
 				{# OTHER OPTIONS #}
-				<form action="/world/" method="post" novalidate>
+				<form action="/" method="post" novalidate>
 					{% csrf_token %}
 					{{ genSeedForm }}
 					
@@ -262,8 +262,6 @@
 			</div>
 			<div id="collapse-dice" class="panel-collapse collapse">
 				<div  class="pre-scrollable">
-
-					
 					<div id="diceSelectorDiv" class="col-sm-6">
 						<button id="D4" type="button" class="btn btn-primary" onclick="addDice(4)">D4</button>
 						<button id="D6" type="button" class="btn btn-primary" onclick="addDice(6)">D6</button>
@@ -274,7 +272,7 @@
 						<button id="D100" type="button" class="btn btn-primary" onclick="addDice(0)">CLEAR</button>
 						<button id="D100" type="button" class="btn btn-primary" onclick="rerollDice()">REROLL</button>
 					</div>
-										<div id="diceBoxWrapper">
+					<div id="diceBoxWrapper">
 						<div id="diceBox"></div>
 					</div>
 					
