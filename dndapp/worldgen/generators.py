@@ -20,8 +20,7 @@ def generateDrugs(seed):
 	random.seed(seed)
 	for drugType in Drug_type.objects.all():
 		drug = {}
-		drug['type'] = drugType
-		drug['name'] = random.choice(Drug_name.objects.all())
+		drug['name'] = str(random.choice(Drug_name.objects.all())) + ' ' + str(drugType)
 		drug['physAff1'] = random.choice(Physical_affect_1.objects.all())
 		drug['physAff2'] = random.choice(Physical_affect_2.objects.all())
 		drug['emotion'] = random.choice(Emotion.objects.all())
