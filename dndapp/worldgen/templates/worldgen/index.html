@@ -10,12 +10,12 @@
 	{% load static %}
 	{# CSS #}
 	<link rel= "stylesheet" type= "text/css" href= "{% static 'worldgen/css/bootstrap.min.css' %}" />
-	<link rel= "stylesheet" type= "text/css" href= "{% static 'worldgen/css/bootstrap-toggle.css' %}" />
+	<link rel= "stylesheet" type= "text/css" href= "{% static 'worldgen/css/bootstrap-toggle.min.css' %}" />
 	<link rel= "stylesheet" type= "text/css" href= "{% static 'worldgen/css/main.css' %}" />
 
 	{# JS #}
 	<script type=text/javascript src="{% static 'worldgen/js/jquery-3.1.1.min.js' %}"></script>
-	<script type=text/javascript src="{% static 'worldgen/js/bootstrap-toggle.js' %}"></script>
+	<script type=text/javascript src="{% static 'worldgen/js/bootstrap-toggle.min.js' %}"></script>
 	<script type=text/javascript src="{% static 'worldgen/js/bootstrap.min.js' %}"></script>
 	
 	<!--[if lt IE 9]>
@@ -48,55 +48,59 @@
 		<div class="panel panel-primary" >
 			<div class="panel-heading" data-toggle="collapse" href="#collapse-config"> <h3>City Config</h3><img style="float:right" src="{% static 'worldgen/images/dArrow.png' %}"></div>
 			<div id="collapse-config" class="panel-collapse collapse">
-				<div id="saveLoadRest">
-					<button type="button" id="saveBtn" class="btn btn-primary btn sidebar-3">Save</button>	
-					<button type="button" id="loadBtn" class="btn btn-primary btn sidebar-3">Load</button>	
-					<button type="button" id="resetBtn" class="btn btn-primary btn sidebar-3">Reset</button>	
-				</div>
-
-				{# CITY OPTIONS #}
-				<div id="cityToGen">
-					<h3>City</h3>
-					<div class="dropdown" id="citySize" >
-					  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">City Size
-					  <span class="caret"></span></button>
-					  <ul class="dropdown-menu">
-					    <li><a href="#">Hamlet</a></li>
-					    <li><a href="#">Village</a></li>
-					    <li><a href="#">Town</a></li>
-					    <li><a href="#">City</a></li>
-					  </ul>
-					</div>
-					<div id="citySizeText">	
-					Village
-					</div>
-				</div>
-				{# END CITY OPTIONS #}
-
-				{# OTHER OPTIONS #}
-				<form action="/" method="post" novalidate>
-					{% csrf_token %}
-					{{ genSeedForm }}
+				<div class="row">
 					
-					<div id="buildingsToGen">			
-						<h3> Buildings </h3>
-						<div>
-							{{ genBuildingsForm }}
-						</div>	
+					<div id="saveLoadRest" class="col-xs-6">
+						<button type="button" id="saveBtn" class="btn btn-primary btn sidebar-3">Save</button>
+						<button type="button" id="loadBtn" class="btn btn-primary btn sidebar-3">Load</button>
+						<button type="button" id="resetBtn" class="btn btn-primary btn sidebar-3">Reset</button>	
 					</div>
 
-					<div id="npcsToGen">
-						<h3>NPC's</h3>
-						<div id="npcQuantInput">					
-							<h4>NPCs to Gen: </h4>
-							{{ genNpcsQuantForm }}
+					{# CITY OPTIONS #}
+					<div id="cityToGen" class="col-xs-6">
+						<div class="dropdown" id="citySize" >
+						  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">City Size
+						  <span class="caret"></span></button>
+						  <ul class="dropdown-menu">
+						    <li><a href="#">Hamlet</a></li>
+						    <li><a href="#">Village</a></li>
+						    <li><a href="#">Town</a></li>
+						    <li><a href="#">City</a></li>
+						  </ul>
 						</div>
-						{{ genNpcsForm }}
+						<div id="citySizeText">	
+						Village
+						</div>
 					</div>
+					{# END CITY OPTIONS #}
+				</div>
+				<div class="row">
+					{# OTHER OPTIONS #}
+					<div class="col-xs-12">
+						<form action="/" method="post" novalidate>
+							{% csrf_token %}
+							{{ genSeedForm }}
+							
+							<div id="buildingsToGen" class="col-xs-6">			
+								<h3> Buildings </h3>
+								<div>
+									{{ genBuildingsForm }}
+								</div>	
+							</div>
 
-					<button type="submit"  id="rerollAll" class="btn btn-primary btn-lg">Reroll that City!</button>	
-				</form>		
+							<div id="npcsToGen" class="col-xs-6">
+								<h3>NPC's</h3>
+								<div id="npcQuantInput">					
+									<h4>NPCs to Gen: </h4>
+									{{ genNpcsQuantForm }}
+								</div>
+								{{ genNpcsForm }}
+							</div>
 
+							<button type="submit" id="rerollAll" class="btn btn-primary btn-lg">Reroll that City!</button>	
+						</form>							
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

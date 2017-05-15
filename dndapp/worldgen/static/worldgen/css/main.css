@@ -63,10 +63,6 @@
 	line-height: 5px; 
 	margin-top: 7px;
 }
-#D4, #D6, #D8, #D10, #D12, #D20, #D100 {
-
-
-}
 
 #cityToGen {
 	height: 60px;
@@ -76,6 +72,7 @@
 	margin-top: 10px;
 	width: 205px;
 }
+
 #npcQuantInput {
 	margin-bottom: 5px;
 }
